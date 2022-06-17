@@ -1,0 +1,22 @@
+body{
+    font-size: 20px;
+}
+
+.pin-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.codes-container{
+    display: flex;
+   
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.code-item-wrapper{
+    display: flex;
+}
