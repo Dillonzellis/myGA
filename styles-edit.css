@@ -683,6 +683,69 @@ table td {
 }
 
 #collapse4460 > div {
-	    background: #fff !important;
-
+  background: #fff !important;
 }
+
+/* menu responsive */
+#mega-menu-wrap-primary-menu > ul > li {
+  margin-right: 40px !important;
+}
+
+@media (max-width: 1524px) {
+  #mega-menu-wrap-primary-menu > ul > li {
+    margin-right: 19px !important;
+  }
+}
+
+@media (max-width: 1306px) {
+  #mega-menu-wrap-primary-menu > ul > li {
+    margin-right: 5px !important;
+  }
+}
+
+/* footer text */
+
+.footer-card-text {
+}
+
+@media (min-width: 980px) {
+  .footer-card-text {
+    font-size: 1rem !important;
+    line-height: 2.5rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-card-text {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (min-width: 1333px) {
+  .footer-card-text {
+    line-height: 3rem !important;
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1454px) {
+  .footer-card-text {
+    line-height: 3rem !important;
+    font-size: 2rem !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .footer-card-text {
+    line-height: 2 !important;
+ 
+  }
+}
+
+/* 1454px 1.5rem */
+
+/* 1333px 1.25rem */
+
+/* 1200px line-height: 2.5rem */
+
+/* 1052px fs 1rem */
