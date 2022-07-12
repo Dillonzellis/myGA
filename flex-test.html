@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      font-family: Montserrat;
+    }
+
+    @media (min-width: 900px) {
+      .container {
+        flex-direction: row;
+      }
+      .img-card {
+        min-height: 500px;
+        width: 50%;
+      }
+      .quote{
+        width: 50%;
+      }
+    }
+
+    .img-card {
+      background-image: url("https://dev4.growthbydesign.org/wp-content/uploads/2021/11/mydifference.jpg");
+      background-size: cover;
+      /* min-height: 500px; */
+      min-height: 500px;
+      /* width: 50%; */
+    }
+
+    .quote {
+      background-color: #003ca6;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* width: 50%; */
+      font-size: 2rem;
+      /* padding: 1rem; */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="img-card"></div>
+
+      <div class="quote">
+        Welcome to MyGeorgia! We are member owned, member focused, and member
+        motivated. For generations, MyGeorgia has served the communities you
+        grew up in with trusted personal service. New Services and expansion
+        allow the opportunity for a bright future in the Northeast Georgia
+        region.
+      </div>
+    </div>
+  </body>
+</html>
