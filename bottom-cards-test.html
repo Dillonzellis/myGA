@@ -20,10 +20,16 @@
       grid-column-gap: 0px;
       grid-row-gap: 0px;
       font-family: Montserrat;
-      font: 1rem;
+      font-size: 1rem;
       font-weight: 500;
       min-height: 1000px;
       grid-template-rows: repeat(4, 1fr);
+    }
+
+    @media (min-width: 900px) {
+      .parent {
+        /* min-height: unset; */
+      }
     }
 
     @media (min-width: 1100px) {
@@ -31,6 +37,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr;
         font-size: 2rem;
+        /* min-height: 1200px; */
       }
     }
 
@@ -75,40 +82,58 @@
       height: 100% !important;
     }
 
-    .div4{
-        background-image: url('https://dev4.growthbydesign.org/wp-content/uploads/2021/11/helpAfford2.jpg');
-        background-size: cover;
-    }
+    .div4 {
+      background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+        url("https://dev4.growthbydesign.org/wp-content/uploads/2022/07/MyGA_Who-We-are_482537066-scaled.jpg");
+      /* background: url("https://dev4.growthbydesign.org/wp-content/uploads/2022/07/MyGA_Who-We-are_482537066-scaled.jpg"); */
+      /* background-image: ; */
+      background-size: cover;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #003EA5;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
 
+      padding-top: 3rem;
+      /* background-color: black;
+      opacity: 0.3; */
+    }
 
     /* .photo > img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
 } */
-
-
   </style>
   <body>
     <div class="parent">
       <div class="div1 img"></div>
       <div class="div2">
         <div class="quote">
-          <span>Welcome to MyGeorgia!</span> We are member owned, member focused,
-          and member motivated. For generations, MyGeorgia has served the
-          communities you grew up in with trusted personal service. New Services
-          and expansion allow the opportunity for a bright future in the
-          Northeast Georgia region.
+          <span>Welcome to MyGeorgia!</span> We are member owned, member
+          focused, and member motivated. For generations, MyGeorgia has served
+          the communities you grew up in with trusted personal service. New
+          Services and expansion allow the opportunity for a bright future in
+          the Northeast Georgia region.
         </div>
       </div>
       <div class="hs-responsive-embed-youtube">
         <iframe
-          src="https://www.youtube.com/watch?v=x4TwgfhH0o4"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/2p_wbBPBLj4?controls=0"
+          title="YouTube video player"
           frameborder="0"
-          allowfullscreen=""
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
         ></iframe>
       </div>
-      <div class="div4"></div>
+      <div class="div4">
+        <div class="card-text">
+          Helping people <span>afford</span> life <small>TM</small>
+        </div>
+      </div>
     </div>
   </body>
 </html>

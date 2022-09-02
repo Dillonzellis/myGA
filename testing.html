@@ -7,204 +7,100 @@
     <title>Document</title>
   </head>
   <style>
-    /* Typography imported from Google Fonts */
-    @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Playfair Display", serif;
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
     }
 
-    p,
-    a {
-      font-family: "Source Sans Pro", sans-serif;
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 50%; /* IE10 */
+      flex: 50%;
+      max-width: 50%;
+      padding: 0;
     }
 
-    /* Generic styles */
-    html {
-      scroll-behavior: smooth;
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
     }
 
-    a {
-      background-color: goldenrod;
-      text-decoration: none;
-      color: white;
-      border-radius: 0.25rem;
-      text-align: center;
-      display: inline-block;
-      transition: all 0.3s;
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
     }
 
-    a:hover {
-      opacity: 0.6;
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
     }
 
-    /* Styles for the hero image */
-    .hero {
-      /* Photo by mnm.all on Unsplash */
-      background: url("https://images.unsplash.com/photo-1518176258769-f227c798150e")
-        center;
-      background-size: cover;
-      padding: 4rem 2rem;
-      /* grid styles */
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      align-items: center;
-    }
-
-    .hero > * {
-      color: white;
-    }
-
-    .hero > h1 {
-      font-size: 4rem;
-      padding-bottom: 1rem;
-    }
-
-    .hero > article > p {
-      font-size: 1.5rem;
-      font-weight: 200;
-    }
-
-    .hero > article > a {
-      padding: 1rem;
-      margin-top: 0.75rem;
-    }
-
-    /* breweries styles */
-    .breweries {
-      padding: 2rem;
-    }
-
-    .breweries > ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      grid-gap: 1rem;
-    }
-
-    .breweries > ul > li {
-      border: 1px solid #e2e2e2;
-      border-radius: 0.5rem;
-    }
-
-    .breweries > ul > li > figure {
-      max-height: 220px;
-      overflow: hidden;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
+    
+    .hs-responsive-embed-youtube {
       position: relative;
     }
-
-    .breweries > ul > li > figure > img {
-      width: 100%;
-    }
-
-    .breweries > ul > li > figure > figcaption {
+    .hs-responsive-embed-youtube iframe {
       position: absolute;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.7);
-      width: 100%;
+      width: 100% !important;
+      height: 100% !important;
     }
 
-    .breweries > ul > li > figure > figcaption > h3 {
-      color: white;
-      padding: 0.75rem;
-      font-size: 1.25rem;
+
+    .quote {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #003ca6;
+      color: #fff;
+      padding: 0 1rem;
+      height: 100%;
     }
 
-    .breweries > ul > li > p {
-      font-size: 1rem;
-      line-height: 1.5;
-      padding: 1rem 0.75rem;
-      color: #666666;
+    /* .quote {
+    } */
+
+    .quote > span {
+      color: #9de0ed;
     }
 
-    .breweries > ul > li > a {
-      padding: 0.5rem 1rem;
-      margin: 0.5rem;
-    }
-
-    /* footer */
-    footer {
-      background-color: #333;
-      padding: 0.75rem;
-      color: white;
-      text-align: center;
-      font-size: 0.75rem;
-    }
   </style>
   <body>
-    <main class="wrapper">
-      <section class="hero">
-        <h1>You thirsty?</h1>
-        <article>
-          <p>
-            Explore local breweries with just one click and stirred by starlight
-            across the centuries light years great turbulent clouds
-            circumnavigated paroxysm of global death.
-          </p>
-          <a href="#breweries">Browse Breweries</a>
-        </article>
-      </section>
-      <section class="breweries" id="breweries">
-        <ul>
-          <li>
-            <figure>
-              <!-- Photo by Quentin Dr on Unsplash -->
-              <img
-                src="https://images.unsplash.com/photo-1471421298428-1513ab720a8e"
-                alt="Several hands holding beer glasses"
-              />
-              <figcaption><h3>Billions upon billions</h3></figcaption>
-            </figure>
-            <p>
-              Made in the interiors of collapsing stars star stuff harvesting
-              star light venture billions upon billions Drake Equation brain is
-              the seed of intelligence?
-            </p>
-            <a href="#">Visit Website</a>
-          </li>
-          <li>
-            <figure>
-              <!-- Photo by Drew Farwell on Unsplash -->
-              <img
-                src="https://images.unsplash.com/photo-1513309914637-65c20a5962e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"
-                alt="Several friends doing a toast"
-              />
-              <figcaption><h3>Drake Equation</h3></figcaption>
-            </figure>
-            <p>
-              Another world citizens of distant epochs from which we spring
-              descended from astronomers Orion's sword shores of the cosmic
-              ocean.
-            </p>
-            <a href="#">Visit Website</a>
-          </li>
-          <li>
-            <figure>
-              <!-- Photo by Rawpixel on Unsplash -->
-              <img
-                src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80"
-                alt="Three different glasses of beer"
-              />
-              <figcaption><h3>Vast cosmic arena</h3></figcaption>
-            </figure>
-            <p>
-              Galaxies the ash of stellar alchemy prime number science
-              inconspicuous motes of rock and gas brain is the seed of
-              intelligence.
-            </p>
-            <a href="#">Visit Website</a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2019. Made with ❤ and CSS Grid.</p>
-    </footer>
+    <div class="row">
+      <div class="column">
+        <img
+          src="https://dev4.growthbydesign.org/wp-content/uploads/2021/11/mydifference.jpg"
+          style="width: 100%"
+        />
+        <div class="hs-responsive-embed-youtube" style="width: 100%;">
+          <iframe
+            src="https://www.youtube.com/watch?v=2p_wbBPBLj4&list=PLc7eD6GB1Sp5OwU2Av0Ns-GnBtjN78Pb3&index=1"
+            frameborder="0"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </div>
+      <div class="column">
+        <div class="quote">
+          <span>Welcome to MyGeorgia!</span> We are member owned, member
+          focused, and member motivated. For generations, MyGeorgia has served
+          the communities you grew up in with trusted personal service. New
+          Services and expansion allow the opportunity for a bright future in
+          the Northeast Georgia region.
+        </div>
+        <img src="https://dev4.growthbydesign.org/wp-content/uploads/2021/11/helpAfford2.jpg" style="width: 100%" />
+      </div>
+    </div>
   </body>
 </html>

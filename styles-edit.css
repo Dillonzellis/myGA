@@ -647,7 +647,7 @@ table td {
   font-size: 45px;
   font-family: Montserrat;
   margin: auto;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 767px) {
@@ -706,12 +706,13 @@ table td {
 /* footer text */
 
 .footer-card-text {
+  line-height: 1.5 !important;
 }
 
 @media (min-width: 980px) {
   .footer-card-text {
     font-size: 1rem !important;
-    line-height: 2.5rem !important;
+    /*     line-height: 2rem !important; */
   }
 }
 
@@ -723,29 +724,116 @@ table td {
 
 @media (min-width: 1333px) {
   .footer-card-text {
-    line-height: 3rem !important;
+    /*     line-height: 3rem !important; */
     font-size: 1.5rem !important;
   }
 }
 
-@media (min-width: 1454px) {
+@media (min-width: 1600px) {
   .footer-card-text {
-    line-height: 3rem !important;
+    /*     line-height: 3rem !important; */
     font-size: 2rem !important;
   }
 }
 
 @media (min-width: 1600px) {
   .footer-card-text {
-    line-height: 2 !important;
- 
+    /*     line-height: 2 !important; */
   }
 }
 
-/* 1454px 1.5rem */
+#b_item10634 > label {
+  font-weight: 400 !important;
+}
 
-/* 1333px 1.25rem */
+@media (min-width: 981px) {
+  #footer-blocks-flex {
+    display: flex;
+    align-items: center;
+  }
+}
 
-/* 1200px line-height: 2.5rem */
+/* overdraft table */
 
-/* 1052px fs 1rem */
+.overdraft-table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /*         table-layout: fixed; */
+  font-family: montserrat;
+}
+
+.overdraft-table tr {
+  /*         background-color: #f8f8f8; */
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+.overdraft-table th,
+.overdraft-table td {
+  padding: 0.625em;
+  text-align: left;
+}
+
+.overdraft-table th {
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 600px) {
+  .overdraft-table {
+    border: 0;
+  }
+
+  .overdraft-table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .overdraft-table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  .overdraft-table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  .overdraft-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+
+  .overdraft-table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.overdraft-table td {
+  color: #000 !important;
+  border-top: none !important;
+  padding: 0 !important;
+}
+
+.overdraft-table th {
+  color: #000 !important;
+}
+
+@media (min-width: 600px) {
+  .overdraft-table td {
+    padding: 6px 24px !important;
+  }
+}

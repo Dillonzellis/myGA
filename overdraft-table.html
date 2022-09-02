@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .overdraft-table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+        font-family: montserrat;
+      }
+
+      .overdraft-table tr {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: 0.35em;
+      }
+
+      .overdraft-table th,
+      .overdraft-table td {
+        padding: 0.625em;
+        text-align: left;
+      }
+
+      .overdraft-table th {
+        font-size: 1.25rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      @media screen and (max-width: 600px) {
+        .overdraft-table {
+          border: 0;
+        }
+
+        .overdraft-table thead {
+          border: none;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+        }
+
+        .overdraft-table tr {
+          border-bottom: 3px solid #ddd;
+          display: block;
+          margin-bottom: 0.625em;
+        }
+
+        .overdraft-table td {
+          border-bottom: 1px solid #ddd;
+          display: block;
+          font-size: 0.8em;
+          text-align: right;
+        }
+
+        .overdraft-table td::before {
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        .overdraft-table td:last-child {
+          border-bottom: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table class="overdraft-table">
+      <thead>
+        <tr>
+          <th scope="col">Service</th>
+          <th scope="col">Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Service">
+            Overdraft Protection Link to Another Deposit Account you have at
+            MyGeorgia*
+          </td>
+          <td data-label="Cost">MyGeorgia* $5.00 fee per transfer.</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Service">
+            Overdraft Protection Line of Credit*
+          </td>
+          <td data-label="Cost">Interest applies.</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Service">Overdraft Privilege</td>
+          <td data-label="Cost">$32.00 overdraft fee per item.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="overdraft-table">
+      <thead>
+        <tr>
+          <th scope="col">Transactions Covered with Overdraft Privilege</th>
+          <th scope="col">Standard Coverage (No action required)</th>
+          <th scope="col">Extended Coverage (Your consent required)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Transactions Covered">Checks</td>
+          <td data-label="Standard Coverage">X</td>
+          <td data-label="Extended Coverage">X</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Transactions Covered">
+            ACH - Auto Debits
+          </td>
+          <td data-label="Standard Coverage">X</td>
+          <td data-label="Extended Coverage">X</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Transactions Covered">
+            Recurring Debit Card Payments
+          </td>
+          <td data-label="Standard Coverage">X</td>
+          <td data-label="Extended Coverage">X</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Transactions Covered">
+            Online Bill Pay Items
+          </td>
+          <td data-label="Standard Coverage">X</td>
+          <td data-label="Extended Coverage">X</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Transactions Covered">
+            Internet Banking Transfers
+          </td>
+          <td data-label="Standard Coverage">X</td>
+          <td data-label="Extended Coverage">X</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Transactions Covered">
+            Telephone Banking
+          </td>
+          <td data-label="Standard Coverage">X</td>
+          <td data-label="Extended Coverage">X</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Transactions Covered">
+            Teller Window Transactions
+          </td>
+          <td data-label="Standard Coverage">X</td>
+          <td data-label="Extended Coverage">X</td>
+        </tr>
+        <tr>
+          <td scope="row" data-label="Transactions Covered">ATM Withdrawals</td>
+          <td data-label="Standard Coverage"></td>
+          <td data-label="Extended Coverage">X*</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul>
+      <li>We have standard overdraft practices that come with your account.</li>
+      <li>
+        We also offer overdraft protection plans, such as a link to a savings
+        account, which may be less expensive than our standard overdraft
+        practices. To learn more, ask us about these plans.
+      </li>
+    </ul>
+
+    <form
+      name="opt_in"
+      enctype="multipart/form-data"
+      action="insert14.php"
+      method="post"
+      onsubmit="return uniValidate(this);"
+    >
+      <table
+        style="width: 95%"
+        border="0"
+        align="center"
+        cellpadding="0"
+        cellspacing="0"
+        role="presentation"
+      >
+        <tr>
+          <td colspan="4">
+            <span class="style4">
+              <input
+                name="choice"
+                type="checkbox"
+                id="choice"
+                value="I want MyGeorgia Credit Union to authorize and pay overdrafts on my ATM and everyday debit card transactions."
+                aria-label="I want to Opt-In"
+              />
+              <span class="innercontent">
+                I <strong><u>want </u></strong>MyGeorgia Credit Union to
+                authorize and pay overdrafts for which an Overdraft fee will be
+                assessed on my ATM and everyday debit card transactions.
+              </span></span
+            ><span class="innercontent"
+              ><u
+                >I understand that I have an ongoing right to revoke my consent
+                at any time. <strong>How to Opt-Out:</strong> Please call
+                MyGeorgia Credit Union at 1-800-849-4255 or 770-534-4255 or stop
+                by one of our branches to revoke your authorization at any time.
+              </u></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td height="35" class="innercontent">
+            <label for="date">Date:</label>
+            <span class="style6">
+              <input name="date" type="text" id="date" size="15" />
+            </span>
+          </td>
+          <td colspan="3" class="innercontent">
+            <label for="name">Name:</label>
+            <input name="name" type="text" id="name" size="30" />
+          </td>
+        </tr>
+        <tr>
+          <td height="35" class="innercontent">
+            <label for="account">Account No.:</label>
+            <input name="account" type="text" id="account" size="20" />
+          </td>
+          <td colspan="3" class="innercontent">
+            <label for="email">Email:</label>
+            <span class="style6">
+              <input name="email" type="text" id="email" size="27" />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="hphone">Home Phone:</label
+            ><input
+              class="required"
+              name="hphone"
+              value=""
+              size="15"
+              maxlength="20"
+              type="text"
+              id="hphone"
+            />
+          </td>
+          <td colspan="3">
+            <label for="cphone">Cell Phone:</label>
+            <input
+              class="required"
+              name="cphone"
+              value=""
+              size="15"
+              maxlength="20"
+              type="text"
+              id="cphone"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" align="center">
+            <input name="Submit" value="Submit" type="submit" id="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
