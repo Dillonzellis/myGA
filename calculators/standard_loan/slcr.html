@@ -1,136 +1,171 @@
-<HTML lang="en">
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Standard Loan Calculator</title>
+    <!--InternetActive Calculatorsï¿½-->
+    <!--Version 2.0-->
+    <!--Copyright ï¿½ 1998 - 2001 Desert Cactus Software Corporation-->
 
-<HEAD>
+    <!-- <SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT> -->
 
-<TITLE>InternetActive Calculators: Standard Loan Calculator</TITLE>
-<!--InternetActive Calculators™-->
-<!--Version 2.0-->
-<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
 
-<SCRIPT Language="JavaScript" src='style.js'>
-</SCRIPT>
+    <script language="JavaScript" src="pad.js"></script>
 
-<SCRIPT Language="JavaScript" src='pad.js'>
-</SCRIPT>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
-})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
-<!-- End Google Tag Manager -->
-</head>
-
-<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-
-<TABLE WIDTH=500>
-  <tr> 
-    <td> 
-      <SCRIPT Language="JavaScript" src='read.js'>
-</SCRIPT>
-      <SCRIPT Language="JavaScript">
-var ZZZ = getValue(passed, 'calculate_option');
-
-if (ZZZ == 1) {
-
-if (getValue(passed, 'NumberOfYears') > 15) {
-
-alert("Please wait while Standard Loan Calculator builds the amortization table. This can take up to 30 seconds or more, depending on the speed of your computer's processor and the web browser you are using.\n\nInternet Explorer Users: When computing a long-term loan, you may get the following message: 'A script on this page is causing Internet Explorer to run slowly. If it continues to run, your computer may become unresponsive. Do you want to abort the script?'\n\nThere is absolutely no danger of your computer becoming unresponsive. Click NO when you get this message box to display the results of your calculation.");
-
-}
-
-}
-</SCRIPT>
-      <CENTER>
-      </CENTER>
-      <FORM Method=post>
-        <CENTER>
-          <TABLE Border=1 Cellpadding=7>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
-                <CENTER>
-                  <span class=FontTwo><strong>InternetActive Calculators™</strong> 
-                  </span> <br>
-                  <span class=FontThree> <strong>Standard Loan Calculator</strong></span>
-                </CENTER><hr size="1" width="100%">
-                <span class=FontThree> 
-                <CENTER>
-                  <strong>Results</strong>
-                </CENTER>
-                </span> </TD>
-            </TR>
-            <TR> </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Loan Amount: </span> 
-              </TD>
-              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var A = getValue(passed,'LoanAmount');
-	if (A < 0) { A = 0 }
-	document.write(currencyPad(A));
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var B = getValue(passed,'InterestRate');
-	if (B < 0) { B = 0 }
-	document.write(roundingPad((B * 100.00)/100)+"%");
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Years: </span> 
-              </TD>
-              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var C = getValue(passed,'NumberOfYears');
-	if (C < 0) { C = 0 }
-	document.write(integerPad(C));
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Periods Per 
-                Year: </span> </TD>
-              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var D = getValue(passed,'NumberOfPeriods');
-	if (D < 0) { D = 0 }
-	document.write(integerPad(D));
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Payment Amount: </span> 
-              </TD>
-              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript" src='slcc.js'>
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Total Interest Paid: 
-                </span> </TD>
-              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	document.write(currencyPad(TOTINT));
-</SCRIPT>
-                </span> </TD>
-            </TR>
-          </TABLE>
-          <br>
-          <br>
-          <SCRIPT Language="JavaScript" src='slca.js'>
-</SCRIPT>
-          <SCRIPT Language="JavaScript" src='endb.js'>
-</SCRIPT>
-        </center>
-      </form>
-</table>
-</BODY>
-</HTML>
+  <body>
+    <div class="table-wrapper" role="presentation">
+      <table width="500">
+        <tr>
+          <td>
+            <script language="JavaScript" src="read.js"></script>
+            <script language="JavaScript">
+              var ZZZ = getValue(passed, "calculate_option");
+              if (ZZZ == 1) {
+                if (getValue(passed, "NumberOfYears") > 15) {
+                  alert(
+                    "Please wait while Standard Loan Calculator builds the amortization table. This can take up to 30 seconds or more, depending on the speed of your computer's processor and the web browser you are using.\n\nInternet Explorer Users: When computing a long-term loan, you may get the following message: 'A script on this page is causing Internet Explorer to run slowly. If it continues to run, your computer may become unresponsive. Do you want to abort the script?'\n\nThere is absolutely no danger of your computer becoming unresponsive. Click NO when you get this message box to display the results of your calculation."
+                  );
+                }
+              }
+            </script>
+            <center></center>
+            <form method="post">
+              <center>
+                <table cellpadding="10">
+                  <tr class="main-header">
+                    <td colspan="2">
+                      <center>
+                        <h1>
+                          <strong>Standard Loan Calculator</strong>
+                        </h1>
+                      </center>
+                      <hr size="1" width="100%" />
+                      <span class="FontThree">
+                        <center>
+                          <h2><strong>Results</strong></h2>
+                        </center>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr class="left-col">
+                    <td>
+                      <span class=""> Loan Amount: </span>
+                    </td>
+                    <td>
+                      <span>
+                        <script language="JavaScript">
+                          var A = getValue(passed, "LoanAmount");
+                          if (A < 0) {
+                            A = 0;
+                          }
+                          document.write(currencyPad(A));
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr class="left-col">
+                    <td>
+                      <span class="FontFour"> Interest Rate: </span>
+                    </td>
+                    <td>
+                      <span class="">
+                        <script language="JavaScript">
+                          var B = getValue(passed, "InterestRate");
+                          if (B < 0) {
+                            B = 0;
+                          }
+                          document.write(roundingPad((B * 100.0) / 100) + "%");
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr class="left-col">
+                    <td>
+                      <span class=""> Number of Years: </span>
+                    </td>
+                    <td>
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var C = getValue(passed, "NumberOfYears");
+                          if (C < 0) {
+                            C = 0;
+                          }
+                          document.write(integerPad(C));
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr class="left-col">
+                    <td>
+                      <span class=""> Number of Periods Per Year: </span>
+                    </td>
+                    <td>
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var D = getValue(passed, "NumberOfPeriods");
+                          if (D < 0) {
+                            D = 0;
+                          }
+                          document.write(integerPad(D));
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr class="left-col">
+                    <td>
+                      <span class=""> Payment Amount: </span>
+                    </td>
+                    <td>
+                      <span class="FontFour">
+                        <script language="JavaScript" src="slcc.js"></script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr class="left-col">
+                    <td>
+                      <span class=""> Total Interest Paid: </span>
+                    </td>
+                    <td>
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write(currencyPad(TOTINT));
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+                <br />
+                <br />
+                <script language="JavaScript" src="slca.js"></script>
+                <script language="JavaScript" src="endb.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

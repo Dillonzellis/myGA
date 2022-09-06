@@ -13,6 +13,10 @@ table h1 {
   margin: 0;
 }
 
+table h2 {
+  margin: 0;
+}
+
 table td {
   font-size: 16px;
 }
@@ -31,7 +35,7 @@ table input {
   background-color: #eeeeee;
 }
 
-.left-col > span {
+.left-col span {
   font-weight: 600;
 }
 
@@ -42,4 +46,12 @@ table input {
   border: none;
   border-radius: 3px;
   font-size: 20px;
+}
+
+/* .amort-table {
+  margin-inline: auto;
+} */
+
+.amort-table td:not(:first-child) {
+  background-color: #eee;
 }
