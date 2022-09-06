@@ -64,7 +64,7 @@ input#user:first-child {
 }
 input.hb-logon {
   background: #04a6e1
-    url("https://dev4.growthbydesign.org/wp-content/uploads/2021/11/rightArrow.png")
+    url("https://www.mygacu.com/wp-content/uploads/2021/11/rightArrow.png")
     no-repeat 90% center;
   background-size: 10px;
   text-transform: uppercase;
@@ -623,7 +623,7 @@ table td {
 .community-bg {
   background-position: center top 46%;
   background-blend-mode: darken;
-  background-image: url(https://dev4.growthbydesign.org/wp-content/uploads/2022/06/Community-183291080-1-scaled.jpg) !important;
+  background-image: url(https://www.mygacu.com/wp-content/uploads/2022/06/Community-183291080-1-scaled.jpg) !important;
 
   background-color: rgba(12, 113, 195, 0.31) !important;
 
@@ -836,4 +836,22 @@ table td {
   .overdraft-table td {
     padding: 6px 24px !important;
   }
+}
+
+#et_pb_contact_form_0 > div.et_pb_contact > form > div{
+	float: left !important;
+}
+
+#mega-menu-item-33 > a{
+	color: #facd01 !important;
+    margin-right: 1rem !important;
+}
+
+#beaconBtn > img {
+	display:none;
+}
+
+.financial-cal-wrapper{
+	display:flex;
+	justify-content:space-around;
 }
