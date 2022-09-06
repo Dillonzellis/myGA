@@ -1,0 +1,110 @@
+<HTML lang="en">
+
+<HEAD>
+
+<TITLE>InternetActive Calculators: Variable Rate Mortgage Calculator</TITLE>
+<!--InternetActive Calculators™-->
+<!--Version 2.0-->
+<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+
+<SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT>
+
+<SCRIPT Language="JavaScript" src='vrmcv.js'>
+</SCRIPT>
+
+<!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
+<!-- End Google Tag Manager -->
+</head>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE WIDTH=500 role="presentation">
+  <tr> 
+    <td> 
+      <CENTER>
+      </CENTER>
+      <FORM Action="vrmcr.html">
+        <CENTER>
+          <TABLE Border=1 Cellpadding=7 role="presentation">
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
+                <CENTER>
+                  <h1 style="font-size: 1.125em;"><span class=FontTwo><strong>InternetActive Calculators™</strong> 
+                  </span> <br>
+					  <span class=FontThree> <strong>Variable Rate Mortgage Calculator</strong></span></h1>
+                </CENTER>
+              </TD>
+            </TR>
+            <TR> </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Loan Amount: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> 
+                <INPUT NAME = LoanAmount style="font-family: Verdana, Arial; font-size: 8pt" title="Loan Amount" onFocus=select(); onBlur = checkLA(this.form); VALUE=250000 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Months: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> 
+                <INPUT NAME = NumberOfMonths style="font-family: Verdana, Arial; font-size: 8pt" title="Number of Months" onFocus=select(); onBlur = checkM(this.form); VALUE=360 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Beginning Interest Rate: 
+                </span> </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT Language = "JavaScript">
+document.write(""+(SR*100.00)/100+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Ending Interest Rate: 
+                </span> </TD>
+              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
+                <SCRIPT Language = "JavaScript">
+document.write(""+(ER*100.00)/100+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Incremental Rate of Interest: 
+                </span> </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT Language = "JavaScript">
+document.write(""+(IR*100.00)/100+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Rate Changes 
+                over Life of Loan: </span> </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT Language = "JavaScript">
+document.write(NORC);
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFive> 
+                <INPUT NAME="calculate_option" Type="radio" title="Payment Only" VALUE="0" CHECKED>
+                Calculate Payment Only<BR>
+                <INPUT NAME="calculate_option" Type="radio" title="Payment and Display Amortization Schedule" VALUE="1">
+                Calculate Payment and Display Amortization Schedule<BR>
+                </span> </TD>
+            </TR>
+          </TABLE>
+          <SCRIPT Language="JavaScript" src='enda.js'>
+</SCRIPT>
+        </center>
+      </form>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,259 @@
+<HTML lang="en">
+
+<HEAD>
+
+<TITLE>InternetActive Calculators: Loan Qualifier</TITLE>
+<!--InternetActive Calculators™-->
+<!--Version 2.0-->
+<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+
+<SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT>
+
+<SCRIPT Language="JavaScript" src='lqi.js'>
+</SCRIPT>
+
+<SCRIPT Language="JavaScript" src='pad.js'>
+</SCRIPT>
+
+<!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
+<!-- End Google Tag Manager -->
+</head>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE WIDTH=500>
+  <tr> 
+    <td WIDTH=469> 
+      <SCRIPT Language="JavaScript" src='read.js'>
+</SCRIPT>
+      <CENTER>
+      </CENTER>
+      <FORM Method=post>
+        <CENTER>
+          <TABLE Border=1 Cellpadding=7>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
+                <CENTER>
+                  <span class=FontTwo><strong>InternetActive Calculators™</strong> 
+                  </span> <br>
+                  <span class=FontThree> <strong>Loan Qualifier</strong></span>
+                </CENTER><hr size="1" width="100%">
+                <span class=FontThree> 
+                <CENTER>
+                  <strong>Results</strong>
+                </CENTER>
+                </span> </TD>
+            </TR>
+            <TR> </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Loan Amount: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var A = getValue(passed,'LoanAmount');
+	if (A < 0) { A = 0 }
+	document.write(currencyPad(A));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var B = getValue(passed,'InterestRate');
+	if (B < 0) { B = 0 }
+	document.write(roundingPad((B * 100.00)/100)+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Months: </span> 
+              </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var C = getValue(passed,'NumberOfMonths');
+	if (C < 0) { C = 0 }
+	document.write(integerPad(C));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Buyers' Monthly Income: 
+                </span> </TD>
+              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var D = getValue(passed,'BuyersMonthlyIncome');
+	if (D < 0) { D = 0 }
+	document.write(currencyPad(D));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Real Estate Liabilities: 
+                </span> </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var E = getValue(passed,'RealEstateLiabilities');
+	if (E < 0) { E = 0 }
+	document.write(currencyPad(E));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Homeowner's Insurance: 
+                </span> </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var F = getValue(passed,'HomeownersInsurance');
+	if (F < 0) { F = 0 }
+	document.write(currencyPad(F));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> PMI and HOA Dues: </span> 
+              </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var G = getValue(passed,'PMIandHOADues');
+	if (G < 0) { G = 0 }
+	document.write(currencyPad(G));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Other Housing Debt: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var H = getValue(passed,'OtherHousingDebt');
+	if (H < 0) { H = 0 }
+	document.write(currencyPad(H));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Car Payments: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var I = getValue(passed,'CarPayments');
+	if (I < 0) { I = 0 }
+	document.write(currencyPad(I));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Credit Card Payments: 
+                </span> </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var J = getValue(passed,'CreditCardPayments');
+	if (J < 0) { J = 0 }
+	document.write(currencyPad(J));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Child Care Expenses: 
+                </span> </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var K = getValue(passed,'ChildCareExpenses');
+	if (K < 0) { K = 0 }
+	document.write(currencyPad(K));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Other Non-Housing Debt: 
+                </span> </TD>
+              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var L = getValue(passed,'OtherNonHousingDebt');
+	if (L < 0) { L = 0 }
+	document.write(currencyPad(L));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD ALIGN='Center' COLSPAN='2' BGCOLOR=#FFFFEE> <span class=FontFour> 
+                <strong>RESULTS</strong> </span> </TD>
+            </TR>
+            <TR> 
+              <TD ALIGN='Center' COLSPAN='2' BGCOLOR=#FFFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript" src='lqc.js'>
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Gross Monthly Income: 
+                </span> </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">	
+	document.write(currencyPad(D));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Mortgage Payment: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">	
+	document.write(currencyPad(PMT));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Income Obligations: </span> 
+              </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">	
+	document.write(currencyPad(V));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Debt Obligations: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">	
+	document.write(currencyPad(X));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Buyers' Income Ratio: 
+                </span> </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">	
+	document.write(""+roundingPad(SS*100.00)+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Buyers' Debt Ratio: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">	
+	document.write(""+roundingPad(TT*100.00)+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+          </TABLE>
+          <br>
+          <br>
+          <SCRIPT Language="JavaScript" src='endb.js'>
+</SCRIPT>
+        </center>
+      </form>
+</table>
+</BODY>
+</HTML>

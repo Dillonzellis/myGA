@@ -1,0 +1,186 @@
+<HTML lang="en">
+
+<HEAD>
+
+<TITLE>InternetActive Calculators: Refinance Calculator</TITLE>
+<!--InternetActive Calculators™-->
+<!--Version 2.0-->
+<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+
+<SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT>
+
+<SCRIPT Language="JavaScript" src='pad.js'>
+</SCRIPT>
+
+<!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
+<!-- End Google Tag Manager -->
+</head>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE WIDTH=500>
+  <tr> 
+    <td> 
+      <SCRIPT Language="JavaScript" src='read.js'>
+</SCRIPT>
+      <CENTER>
+      </CENTER>
+      <FORM Method=post>
+        <CENTER>
+          <TABLE Border=1 Cellpadding=7>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
+                <CENTER>
+                  <span class=FontTwo><strong>InternetActive Calculators™</strong> 
+                  </span> <br>
+                  <span class=FontThree> <strong>Refinance Calculator</strong></span>
+                </CENTER><hr size="1" width="100%">
+                <span class=FontThree> 
+                <CENTER>
+                  <strong>Results</strong>
+                </CENTER>
+                </span> </TD>
+            </TR>
+            <TR> </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Current Payment: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var E = 0;
+	E = getValue(passed,'CurrentPayment');
+	if (E < 0) { E = 0 }
+	document.write(currencyPad(E));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFour> 
+                <CENTER>
+                  <STRONG> Proposed Mortgage </STRONG> 
+                </CENTER>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Loan Amount: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var A = 0;
+	A = getValue(passed,'LoanAmount');
+	if (A < 0) { A = 0 }
+	document.write(currencyPad(A));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var B = 0;
+	B = getValue(passed,'InterestRate');
+	if (B < 0) { B = 0 }
+	document.write(roundingPad((B * 100.00)/100)+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Years: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var C = 0;
+	C = getValue(passed,'NumberOfYears');
+	if (C < 0) { C = 0 }
+	document.write(integerPad(C));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Mortgage Closing Costs: 
+                </span> </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var D = 0;
+	D = getValue(passed,'MortgageClosingCosts');
+	if (D < 0) { D = 0 }
+	document.write(currencyPad(D));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Mortgage Points: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var F = 0;
+	F = getValue(passed,'MortgagePoints');
+	if (F < 0) { F = 0 }
+	document.write(((F * 100.00)/100)+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> New Monthly Payment: 
+                </span> </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript" src='rfcc.js'>
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Monthly Savings: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	if (R < 0) {
+		var txtResult = "Since the new payment exceeds the old payment, there is no savings on the refinanced loan."
+		document.write(txtResult);
+		} else {
+		document.write(currencyPad(R));
+	}
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Total Closing Costs: 
+                </span> </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	document.write(currencyPad(Y));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Months to Break Even: 
+                </span> </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	if (U < 0) {
+		var txtResultEnd = "Since the new payment exceeds the old payment, you will never break even on the refinanced loan."
+		document.write(txtResultEnd);
+		} else {
+		document.write(""+roundingPad((U/100)*100.00)+"");
+	}
+</SCRIPT>
+                </span> </TD>
+            </TR>
+          </TABLE>
+          <br>
+          <br>
+          <SCRIPT Language="JavaScript" src='slca.js'>
+</SCRIPT>
+          <SCRIPT Language="JavaScript" src='endb.js'>
+</SCRIPT>
+        </center>
+      </form>
+</table>
+</BODY>
+</HTML>

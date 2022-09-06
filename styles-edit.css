@@ -838,20 +838,34 @@ table td {
   }
 }
 
-#et_pb_contact_form_0 > div.et_pb_contact > form > div{
-	float: left !important;
+#et_pb_contact_form_0 > div.et_pb_contact > form > div {
+  float: left !important;
 }
 
-#mega-menu-item-33 > a{
-	color: #facd01 !important;
-    margin-right: 1rem !important;
+#mega-menu-item-33 > a {
+  color: #facd01 !important;
+  margin-right: 1rem !important;
 }
 
 #beaconBtn > img {
-	display:none;
+  display: none;
 }
 
-.financial-cal-wrapper{
-	display:flex;
-	justify-content:space-around;
+/* financial calculators */
+
+.financial-cal-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+#post-1565
+  > div
+  > div
+  > div
+  > div.et_pb_section.et_pb_section_1.et_section_regular
+  > div
+  > div.et_pb_column.et_pb_column_3_5.et_pb_column_2.et_pb_css_mix_blend_mode_passthrough
+  > div {
+  display: flex;
+  justify-content: center;
 }

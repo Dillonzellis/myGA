@@ -1,0 +1,167 @@
+<HTML lang="en">
+
+<HEAD>
+
+<TITLE>InternetActive Calculators: APR Calculator</TITLE>
+<!--InternetActive Calculators™-->
+<!--Version 2.0-->
+<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+
+<SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT>
+
+<SCRIPT Language="JavaScript" src='pad.js'>
+</SCRIPT>
+
+<!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
+<!-- End Google Tag Manager -->
+</head>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE WIDTH=500>
+  <tr> 
+    <td> <SCRIPT Language="JavaScript" src='read.js'>
+</SCRIPT>
+      <FORM Method=post>
+        <CENTER>
+          <TABLE Border=1 Cellpadding=7>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
+                <CENTER>
+                  <span class=FontTwo><strong>InternetActive Calculators™</strong> 
+                  </span> <br>
+                  <span class=FontThree> <strong>APR Calculator</strong></span>
+                </CENTER><hr size="1" width="100%">
+                <span class=FontThree> 
+                <CENTER>
+                  <strong><span class=FontThree>
+                  </span>Results</strong> 
+                </CENTER>
+                </span> </TD>
+            </TR>
+            <TR> </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Loan Amount: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var LA = getValue(passed,'LoanAmount');
+	if (LA < 0) { LA = 0 }
+	document.write(currencyPad(LA));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var B = getValue(passed,'InterestRate');
+	if (B < 0) { B = 0 }
+	document.write(roundingPad((B * 100.00)/100)+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Years: </span> 
+              </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var C = getValue(passed,'NumberOfYears');
+	if (C < 0) { C = 0 }
+	document.write(integerPad(C));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Origination Fee: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var D = getValue(passed,'OriginationFee');
+	if (D < 0) { D = 0 }
+	var OF = LA * (D / 100);
+	document.write(currencyPad(OF));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Discount Points: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var E = getValue(passed,'DiscountPoints');
+	if (E < 0) { E = 0 }
+	var DP = LA * (E / 100);
+	document.write(currencyPad(DP));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Prepaid Interest: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var F = getValue(passed,'PrepaidInterest');
+	if (F < 0) { F = 0 }
+	document.write(currencyPad(F));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Lender's Fees: </span> 
+              </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var G = getValue(passed,'LendersFees');
+	if (G < 0) { G = 0 }
+	document.write(currencyPad(G));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Total Loan Fees: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var TLF = Math.abs(OF) + Math.abs(DP) + Math.abs(F) + Math.abs(G);
+	document.write(currencyPad(TLF));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Payment: </span> </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript" src='aprcvar.js'>
+</SCRIPT>
+                <SCRIPT LANGUAGE="JavaScript" src='aprcc.js'>
+</SCRIPT>
+                <SCRIPT LANGUAGE="JavaScript">
+document.write(currencyPad(PMT));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Annual Percentage Rate: 
+                </span> </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript" src='aprcd.js'>
+</SCRIPT>
+                </span> </TD>
+            </TR>
+          </TABLE>
+          <br>
+          <br>
+          <SCRIPT Language="JavaScript" src='endb.js'>
+</SCRIPT>
+        </center>
+      </form>
+</table>
+</BODY>
+</HTML>

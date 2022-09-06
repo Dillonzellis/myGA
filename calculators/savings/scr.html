@@ -1,0 +1,183 @@
+<HTML lang="en">
+
+<HEAD>
+
+<TITLE>InternetActive Calculators: Savings Calculator</TITLE>
+<!--InternetActive Calculators™-->
+<!--Version 2.0-->
+<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+
+<SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT>
+
+<SCRIPT Language="JavaScript" src='pad.js'>
+</SCRIPT>
+
+<!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
+<!-- End Google Tag Manager -->
+</head>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE WIDTH=500>
+  <tr> 
+    <td> 
+      <SCRIPT Language="JavaScript" src='read.js'>
+</SCRIPT>
+      <SCRIPT Language="JavaScript">
+alert("Please wait while Savings Calculator builds the savings schedule. This can take up to 30 seconds or more, depending on the speed of your computer's processor and the web browser you are using. Click OK to continue.");
+</SCRIPT>
+      <CENTER>
+      </CENTER>
+      <FORM Method=post>
+        <CENTER>
+          <TABLE Border=1 Cellpadding=7>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
+                <CENTER>
+                  <span class=FontTwo><strong>InternetActive Calculators™</strong> 
+                  </span> <br>
+                  <span class=FontThree> <strong>Savings Calculator</strong></span>
+                </CENTER><hr size="1" width="100%">
+                <span class=FontThree> 
+                <CENTER>
+                  <strong>Results</strong>
+                </CENTER>
+                </span> </TD>
+            </TR>
+            <TR> </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var SO = getValue(passed,'calculate_option');
+	if (SO == 0) {
+		document.write("Beginning Balance:");
+	}
+	if (SO == 1) {
+		document.write("Ending Balance:");
+	}
+	if (SO == 2) {
+		document.write("Beginning Balance:");
+	}
+</SCRIPT>
+                </span> </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript" src='scc.js'>
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var B = getValue(passed,'InterestRate');
+	if (B < 0) { B = 0 }
+	document.write(roundingPad((B * 100.00)/100)+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var SO = getValue(passed,'calculate_option');
+	if (SO == 0) {
+		document.write("Periodic Contribution:");
+	}
+	if (SO == 1) {
+		document.write("Periodic Contribution:");
+	}
+	if (SO == 2) {
+		document.write("Ending Balance:");
+	}
+</SCRIPT>
+                </span> </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	if (UO == 0) {
+		document.write(currencyPad(C));
+	}
+	if (UO == 1) {
+		document.write(currencyPad(C));
+	}
+	if (UO == 2) {
+		document.write(currencyPad(Z));
+	}
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Periods: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	document.write(integerPad(D));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Compounding Period: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	document.write(strY);
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Inflation Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	document.write(""+roundingPad((H*100.00)/100)+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var SO = getValue(passed,'calculate_option');
+	if (SO == 0) {
+		document.write("Ending Balance:");
+	}
+	if (SO == 1) {
+		document.write("Beginning Balance:");
+	}
+	if (SO == 2) {
+		document.write("Periodic Contribution:");
+	}
+</SCRIPT>
+                </span> </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	if (UO == 0) {
+		document.write(currencyPad(Z));
+	}
+	if (UO == 1) {
+		document.write(currencyPad(A));
+	}
+	if (UO == 2) {
+		document.write(currencyPad(C));
+	}
+</SCRIPT>
+                </span> </TD>
+            </TR>
+          </TABLE>
+          <br>
+          <br>
+          <SCRIPT Language="JavaScript" src='sca.js'>
+</SCRIPT>
+          <br>
+          <br>
+          <SCRIPT Language="JavaScript" src='endb.js'>
+</SCRIPT>
+        </center>
+      </form>
+</table>
+</BODY>
+</HTML>

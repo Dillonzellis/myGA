@@ -1,0 +1,114 @@
+<HTML lang="en">
+
+<HEAD>
+
+<TITLE>InternetActive Calculators: Advanced Loan Calculator</TITLE>
+<!--InternetActive Calculators™-->
+<!--Version 2.0-->
+<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+
+<SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT>
+
+<SCRIPT Language="JavaScript" src='alcv.js'>
+</SCRIPT>
+
+<!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
+<!-- End Google Tag Manager -->
+</head>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<TABLE WIDTH=500 role="presentation">
+  <tr> 
+    <td> <CENTER>
+      </CENTER>
+      <FORM Action="alcr.html">
+        <CENTER>
+          <TABLE Border=1 Cellpadding=7 role="presentation">
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
+                <CENTER>
+					<h1 style="font-size: 1.125em;"><span class=FontTwo><strong>InternetActive Calculators™</strong>
+                  </span> <br>
+						<span class=FontThree> <strong>Advanced Loan Calculator</strong></span></h1>
+                </CENTER>
+              </TD>
+            </TR>
+            <TR> </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Loan Amount: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> 
+                <INPUT NAME = LoanAmount style="font-family: Verdana, Arial; font-size: 8pt" title="Loan Amount" onFocus=select(); onBlur = checkLA(this.form); VALUE=25000 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> 
+                <INPUT NAME = InterestRate style="font-family: Verdana, Arial; font-size: 8pt" title="Interest Rate" onFocus=select(); onBlur = checkIR(this.form); VALUE=8 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Years: </span> 
+              </TD>
+              <TD BGCOLOR=#EEEEFF> 
+                <INPUT NAME = NumberOfYears style="font-family: Verdana, Arial; font-size: 8pt" title="Number of Years" onFocus=select(); onBlur = checkY(this.form); VALUE=5 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Periods Per 
+                Year: </span> </TD>
+              <TD BGCOLOR=#FFEEFF> 
+                <INPUT NAME = NumberOfPeriods style="font-family: Verdana, Arial; font-size: 8pt" title="Number of Periods Per Year" onFocus=select(); onBlur = checkP(this.form); VALUE=12 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Additional Principal 
+                Per Period: </span> </TD>
+              <TD BGCOLOR=#EEFFEE> 
+                <INPUT NAME = AdditionalPrincipal style="font-family: Verdana, Arial; font-size: 8pt" title="Additional Principal Per Period" onFocus=select(); onBlur = checkAP(this.form); VALUE=0 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFour> 
+                <INPUT NAME="compound_option" Type="radio" title="Daily Basis" VALUE="0">
+                Compound on a Daily Basis<BR>
+                <INPUT NAME="compound_option" Type="radio" title="Weekly Basis" VALUE="1">
+                Compound on a Weekly Basis<BR>
+                <INPUT NAME="compound_option" Type="radio" title="Bi-Weekly Basis" VALUE="2">
+                Compound on a Bi-Weekly Basis<BR>
+                <INPUT NAME="compound_option" Type="radio" title="Semi-Monthly Basis" VALUE="3">
+                Compound on a Semi-Monthly Basis<BR>
+                <INPUT NAME="compound_option" Type="radio" title="Monthly Basis" VALUE="4" CHECKED>
+                Compound on a Monthly Basis<BR>
+                <INPUT NAME="compound_option" Type="radio" title="Quarterly Basis" VALUE="5">
+                Compound on a Quarterly Basis<BR>
+                <INPUT NAME="compound_option" Type="radio" title="Semi-Annual Basis" VALUE="6">
+                Compound on a Semi-Annual Basis<BR>
+                <INPUT NAME="compound_option" Type="radio" title="Annual Basis" value="7">
+                Compound on an Annual Basis<BR>
+                </span></TD>
+            </TR>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFive> 
+                <INPUT NAME="calculate_option" Type="radio" title="Payment Only" VALUE="0" CHECKED>
+                Calculate Payment Only<BR>
+                <INPUT NAME="calculate_option" Type="radio" title="Payment and Display Amortization Schedule" VALUE="1">
+                Calculate Payment and Display Amortization Schedule<BR>
+                </span> </TD>
+            </TR>
+          </TABLE>
+          <SCRIPT Language="JavaScript" src='enda.js'>
+</SCRIPT>
+        </center>
+      </form>
+    
+</table>
+</BODY>
+</HTML>

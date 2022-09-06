@@ -1,0 +1,87 @@
+<HTML lang="en">
+
+<HEAD>
+
+<TITLE>InternetActive Calculators: Fixed Rate Mortgage Calculator</TITLE>
+<!--InternetActive Calculators™-->
+<!--Version 2.0-->
+<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+
+<SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT>
+
+<SCRIPT Language="JavaScript" src='frmcv.js'>
+</SCRIPT>
+
+<!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
+<!-- End Google Tag Manager -->
+</head>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE WIDTH=500 role="presentation">
+  <tr> 
+    <td> <CENTER>
+      </CENTER>
+      <FORM Action="frmcr.html">
+        <CENTER>
+          <TABLE Border=1 Cellpadding=7 role="presentation">
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
+                <CENTER>
+                  <h1 style="font-size: 1.125em;"><span class=FontTwo><strong>InternetActive Calculators™</strong> 
+                  </span> <br>
+					  <span class=FontThree> <strong>Fixed Rate Mortgage Calculator</strong></span></h1>
+                </CENTER>
+              </TD>
+            </TR>
+            <TR> </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Loan Amount: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> 
+                <INPUT NAME = LoanAmount style="font-family: Verdana, Arial; font-size: 8pt" title="Loan Amount" onFocus=select(); onBlur = checkLA(this.form); VALUE=250000 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> 
+                <INPUT NAME = InterestRate style="font-family: Verdana, Arial; font-size: 8pt" title="Interest Rate" onFocus=select(); onBlur = checkIR(this.form); VALUE=8 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Months: </span> 
+              </TD>
+              <TD BGCOLOR=#EEEEFF> 
+                <INPUT NAME = NumberOfMonths style="font-family: Verdana, Arial; font-size: 8pt" title="Number of Months" onFocus=select(); onBlur = checkM(this.form); VALUE=360 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Additional Principal 
+                Per Month: </span> </TD>
+              <TD BGCOLOR=#FFEEFF> 
+                <INPUT NAME = AdditionalPrincipal style="font-family: Verdana, Arial; font-size: 8pt" title="Principal Per Month" onFocus=select(); onBlur = checkAP(this.form); VALUE=0 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFive> 
+                <INPUT NAME="calculate_option" Type="radio" title="Payment Only" VALUE="0" CHECKED>
+                Calculate Payment Only<BR>
+                <INPUT NAME="calculate_option" Type="radio" title="Payment and Display Amortization Schedule" VALUE="1">
+                Calculate Payment and Display Amortization Schedule<BR>
+                </span> </TD>
+            </TR>
+          </TABLE>
+          <SCRIPT Language="JavaScript" src='enda.js'>
+</SCRIPT>
+        </center>
+      </form>
+</table>
+</BODY>
+</HTML>

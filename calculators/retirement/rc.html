@@ -1,0 +1,149 @@
+<HTML lang="en">
+
+<HEAD>
+
+<TITLE>InternetActive Calculators: Retirement Calculator</TITLE>
+<!--InternetActive Calculators™-->
+<!--Version 2.0-->
+<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+
+<SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT>
+
+<SCRIPT Language="JavaScript" src='rcv.js'>
+</SCRIPT>
+
+<!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
+<!-- End Google Tag Manager -->
+</head>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE WIDTH=500 role="presentation">
+  <tr> 
+    <td> 
+      <CENTER>
+      </CENTER>
+      <FORM Action="rcr.html">
+        <CENTER>
+          <TABLE Border=1 Cellpadding=7 role="presentation">
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
+                <CENTER>
+                  <h1 style="font-size: 1.125em;"><span class=FontTwo><strong>InternetActive Calculators™</strong> 
+                  </span> <br>
+					  <span class=FontThree> <strong>Retirement Calculator</strong></span></h1>
+                </CENTER>
+              </TD>
+            </TR>
+            <TR> </TR>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#EEEEEE> <span class=FontFour> 
+                <INPUT NAME=calculate_option Type="radio" title="Annual Income After Retirement" VALUE="0" CHECKED>
+                <STRONG>Calculate the Annual Income You Will Receive After Retirement</STRONG><BR>
+                (Hint: Enter amounts in the <U>Beginning Balance</U> and the <U>Annual 
+                Contribution</U> boxes, as well as the age parameters.)<BR>
+                <BR>
+                <HR>
+                <INPUT NAME=calculate_option Type="radio" title="Annual Contribution" VALUE="1">
+                <STRONG>Calculate the Annual Contribution You Must Make Before 
+                Retirement</STRONG><BR>
+                (Hint: Enter amounts in the <U>Beginning Balance</U> and the <U>Annual 
+                Income</U> boxes,<BR>
+                as well as the age parameters.)<BR>
+                <BR>
+                <HR>
+                <INPUT NAME=calculate_option Type="radio" title="Beginning Balance Required" VALUE="2">
+                <STRONG>Calculate the Beginning Balance Required in Your Retirement 
+                Account</STRONG><BR>
+                (Hint: Enter amounts in the <U>Annual Contribution</U> and the 
+                <U>Annual Income</U> boxes,<BR>
+                as well as the age parameters.)<BR>
+                <BR>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Beginning Balance: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> 
+                <INPUT NAME=Principal style="font-family: Verdana, Arial; font-size: 8pt" title="Beginning Balance" onFocus = select(); onBlur = checkPR(this.form); VALUE=0>
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> 
+                <INPUT NAME=InterestRate style="font-family: Verdana, Arial; font-size: 8pt" title="Interest Rate" onFocus = select(); onBlur = checkIR(this.form); VALUE=8>
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Annual Contribution: 
+                </span> </TD>
+              <TD BGCOLOR=#EEEEFF> 
+                <INPUT NAME=AnnualContribution style="font-family: Verdana, Arial; font-size: 8pt" title="Annual Contribution" onFocus = select(); onBlur = checkAC(this.form); VALUE=0>
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Annual Income: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEFF> 
+                <INPUT NAME=AnnualIncome style="font-family: Verdana, Arial; font-size: 8pt" title="Annual Income" onFocus = select(); onBlur = checkAI(this.form); VALUE=0>
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Present Age: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> 
+                <INPUT NAME=PresentAge style="font-family: Verdana, Arial; font-size: 8pt" title="Present Age" onFocus = select(); onBlur = checkPresAge(this.form); VALUE=35>
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Retirement Age: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> 
+                <INPUT NAME=RetirementAge style="font-family: Verdana, Arial; font-size: 8pt" title="Retirement Age" onFocus = select(); onBlur = checkRetAge(this.form); VALUE=65>
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Age At Which Retirement 
+                Withdrawals Will End: </span> </TD>
+              <TD BGCOLOR=#EEEEFF> 
+                <INPUT NAME=WithdrawalAge style="font-family: Verdana, Arial; font-size: 8pt" title="Withdrawals Will End" onFocus = select(); onBlur = checkWithAge(this.form); VALUE=85>
+              </TD>
+            </TR>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFive> <strong> 
+                <INPUT NAME="today" TYPE="checkbox" title="Show Annual Income" VALUE="1" CHECKED>
+                Show Annual Income in Current Dollars</strong><BR>
+                (Hint: Check this box to show the annual income amount in today's 
+                dollars.)<BR>
+                <BR>
+                <HR>
+                <strong> 
+                <INPUT NAME="inflation" TYPE="checkbox" title="Adjust for Inflation" VALUE="0">
+                Adjust for Inflation</strong><BR>
+                (Hint: Check this box to account for the effects of inflation 
+                over time.)<BR>
+                <BR>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Inflation Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEFF> 
+                <INPUT NAME=InflationRate style="font-family: Verdana, Arial; font-size: 8pt" title="Inflation Rate" onFocus = select(); onBlur = checkInf(this.form); VALUE=3>
+              </TD>
+            </TR>
+          </TABLE>
+          <SCRIPT Language="JavaScript" src='enda.js'>
+</SCRIPT>
+        </center>
+      </form>
+</table>
+</BODY>
+</HTML>
