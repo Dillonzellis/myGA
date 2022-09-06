@@ -1,0 +1,45 @@
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  font-family: "Montserrat", sans-serif;
+  /* margin-inline: auto; */
+}
+
+table h1 {
+  margin: 0;
+}
+
+table td {
+  font-size: 16px;
+}
+
+table input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.main-header {
+  background-color: #003ca6;
+  color: #fff;
+}
+
+.left-col {
+  background-color: #eeeeee;
+}
+
+.left-col > span {
+  font-weight: 600;
+}
+
+.footer-inputs {
+  padding: 15px 10px;
+  background-color: #003ca6;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+}

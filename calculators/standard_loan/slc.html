@@ -1,88 +1,139 @@
-<HTML lang="en">
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Standard Loan Calculator</title>
+    <!--InternetActive Calculatorsï¿½-->
+    <!--Version 2.0-->
+    <!--Copyright ï¿½ 1998 - 2001 Desert Cactus Software Corporation-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- <script language="JavaScript" src="style.js"></script> -->
 
-<HEAD>
+    <script language="JavaScript" src="slcv.js"></script>
 
-<TITLE>InternetActive Calculators: Standard Loan Calculator</TITLE>
-<!--InternetActive Calculators™-->
-<!--Version 2.0-->
-<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<SCRIPT Language="JavaScript" src='style.js'>
-</SCRIPT>
-
-<SCRIPT Language="JavaScript" src='slcv.js'>
-</SCRIPT>
-
-<!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
-})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
-<!-- End Google Tag Manager -->
-</head>
-
-<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-
-<TABLE WIDTH=500 role="presentation">
-  <tr> 
-    <td> 
-      <CENTER>
-      </CENTER>
-      <FORM Action="slcr.html">
-        <CENTER>
-          <TABLE Border=1 Cellpadding=7 role="presentation">
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
-                <CENTER>
-                  <h1 style="font-size: 1.125em;"><span class=FontTwo><strong>InternetActive Calculators™</strong> 
-                  </span> <br>
-					  <span class=FontThree> <strong>Standard Loan Calculator</strong></span></h1>
-                </CENTER>
-              </TD>
-            </TR>
-            <TR> </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Loan Amount: </span> 
-              </TD>
-              <TD BGCOLOR=#EEFFEE> 
-                <INPUT NAME = LoanAmount style="font-family: Verdana, Arial; font-size: 8pt" title="Loan Amount" onFocus=select(); onBlur = checkLA(this.form); VALUE=25000 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEEE> 
-                <INPUT NAME = InterestRate style="font-family: Verdana, Arial; font-size: 8pt" title="Interest Rate" onFocus=select(); onBlur = checkIR(this.form); VALUE=8 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Years: </span> 
-              </TD>
-              <TD BGCOLOR=#EEEEFF> 
-                <INPUT NAME = NumberOfYears style="font-family: Verdana, Arial; font-size: 8pt" title="Number of Years" onFocus=select(); onBlur = checkY(this.form); VALUE=5 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Periods Per 
-                Year: </span> </TD>
-              <TD BGCOLOR=#FFEEFF> 
-                <INPUT NAME = NumberOfPeriods style="font-family: Verdana, Arial; font-size: 8pt" title="Periods Per Year" onFocus=select(); onBlur = checkP(this.form); VALUE=12 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFive> 
-                <INPUT NAME="calculate_option" Type="radio" title="Calculate Payment Only" VALUE="0" CHECKED>
-                Calculate Payment Only<BR>
-                <INPUT NAME="calculate_option" Type="radio" title="Calculate Payment and Display Amortization Schedule" VALUE="1">
-                Calculate Payment and Display Amortization Schedule<BR>
-                </span> </TD>
-            </TR>
-          </TABLE>
-          <SCRIPT Language="JavaScript" src='enda.js'>
-</SCRIPT>
-        </center>
-      </form>
-</table>
-</BODY>
-</HTML>
+  <body>
+    <div class="table-wrapper">
+      <table width="500" role="presentation">
+        <tr>
+          <td>
+            <center></center>
+            <form action="slcr.html">
+              <center>
+                <table cellpadding="10" role="presentation">
+                  <tr class="main-header">
+                    <td colspan="2">
+                      <center>
+                        <h1>
+                          <strong>Standard Loan Calculator</strong>
+                        </h1>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td class="left-col">
+                      <span> Loan Amount: </span>
+                    </td>
+                    <td>
+                      <input
+                        name="LoanAmount"
+                        title="Loan Amount"
+                        onFocus="select();"
+                        onBlur="checkLA(this.form);"
+                        value="25000"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class=""> Interest Rate: </span>
+                    </td>
+                    <td>
+                      <input
+                        name="InterestRate"
+                        title="Interest Rate"
+                        onFocus="select();"
+                        onBlur="checkIR(this.form);"
+                        value="8"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class=""> Number of Years: </span>
+                    </td>
+                    <td>
+                      <input
+                        name="NumberOfYears"
+                        title="Number of Years"
+                        onFocus="select();"
+                        onBlur="checkY(this.form);"
+                        value="5"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class=""> Number of Periods Per Year: </span>
+                    </td>
+                    <td>
+                      <input
+                        name="NumberOfPeriods"
+                        title="Periods Per Year"
+                        onFocus="select();"
+                        onBlur="checkP(this.form);"
+                        value="12"
+                      />
+                    </td>
+                  </tr>
+                  <tr class="main-header">
+                    <td colspan="2">
+                      <span>
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Calculate Payment Only"
+                          value="0"
+                          checked
+                        />
+                        Calculate Payment Only<br />
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Calculate Payment and Display Amortization Schedule"
+                          value="1"
+                        />
+                        Calculate Payment and Display Amortization Schedule<br />
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+                <script language="JavaScript" src="enda.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
