@@ -1,0 +1,35 @@
+<style type="text/css">
+    .button {margin:10;width:20px;height:20px;color:#FFFFFF;cursor:pointer;}
+    </style>
+    <script type="text/javascript">
+    function MM_setTextOfTextfield(objId,x,newText) { //v9.0
+      with (document){ if (getElementById){
+        var obj = getElementById(objId);} if (obj) obj.value = newText;
+      }
+    }
+    function MM_showHideLayers() { //v9.0
+      var i,p,v,obj,args=MM_showHideLayers.arguments;
+      for (i=0; i<(args.length-2); i+=3) 
+      with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+        if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+        obj.visibility=v; }
+    }
+    </script>
+    
+    <form name="form" action="https://www.mobicint.net/hco/login" method="post"> <table border="0" style="border:none; padding:0px; margin:0px;" width="100%" align="center" role="presentation"><tbody><tr><td align="center"><p align="center" class="hb1"><input name="user" type="text" class="HBFormBox" id="user"
+    onfocus="MM_setTextOfTextfield('user','','')" placeholder="Username" size="20" aria-label="Username Field"></p>
+    </td></tr>
+    <tr><td align="center">       
+    <p align="center" class="hb2"><input name="password" id="password" class="HBFormBox" size="20" type="password" onfocus="MM_setTextOfTextfield('password','','')" placeholder="Password" aria-label="Password Field"></p>
+    </td></tr>
+    <tr><td>
+    <p align="center" class="hbforgot">
+    <a href="https://mobicint.net/hco/forgotPassword" target="_blank">Forgot/New Password</a>  <a href="https://www.mobicint.net/hco/forgotUsername" target="_blank">Forgot Username</a></p>
+    <p align="center">
+    <input name="imageField" type="submit" value="Log-on" width="125" height="50" src="/_layout/images/logon.png" alt="Login Button" class="hb-logon">
+    <input type="hidden" name="Action" value="ACT0004">
+    <input type="hidden" name="CUID" value="hco">
+    </p>
+    </td></tr>
+    </tbody></table>
+    </form>
