@@ -1,0 +1,52 @@
+/* LOGIN BOX */
+.hb {
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  padding-bottom: 100px !important;
+}
+.hb td {
+  border: none !important;
+}
+.hb p {
+  text-align: center !important;
+}
+.hb a {
+  color: white;
+  font-size: 12px !important;
+}
+.hb a:first-child {
+  margin-right: 20px;
+}
+input#user,
+input#password {
+  border: none !important;
+  border-left: 30px solid #04a6e1 !important;
+  background-color: white !important;
+  border-radius: 8px;
+  padding: 5px !important;
+  margin-bottom: 20px;
+}
+input#user:first-child {
+  margin-bottom: 40px !important;
+}
+
+.hbheader {
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 1.875em !important;
+
+  padding-top: 50px !important;
+  margin-bottom: 25px !important;
+  text-align: center !important;
+}
+input.hb-logon {
+  background: #04a6e1
+    url("https://www.mygacu.com/wp-content/uploads/2021/11/rightArrow.png")
+    no-repeat 90% center;
+  background-size: 10px;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  padding: 5px 40px 5px 25px !important;
+  text-align: center;
+  border: none !important;
+  color: white;
+}

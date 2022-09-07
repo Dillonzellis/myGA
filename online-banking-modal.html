@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/online-banking.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="m-online-banking">
+      <p align="center" class="hbheader">Online Banking</p>
+      <form
+        name="form"
+        action="https://www.mobicint.net/hco/login"
+        method="post"
+      >
+        <table
+          border="0"
+          style="border: none; padding: 0px; margin: 0px"
+          width="100%"
+          align="center"
+          role="presentation"
+        >
+          <tbody>
+            <tr>
+              <td align="center">
+                <p align="center" class="hb1">
+                  <input
+                    name="user"
+                    type="text"
+                    class="HBFormBox"
+                    id="user"
+                    onfocus="MM_setTextOfTextfield('user','','')"
+                    placeholder="Username"
+                    size="20"
+                    aria-label="Username Field"
+                  />
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <p align="center" class="hb2">
+                  <input
+                    name="password"
+                    id="password"
+                    class="HBFormBox"
+                    size="20"
+                    type="password"
+                    onfocus="MM_setTextOfTextfield('password','','')"
+                    placeholder="Password"
+                    aria-label="Password Field"
+                  />
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p align="center" class="hbforgot">
+                  <a
+                    href="https://mobicint.net/hco/forgotPassword"
+                    target="_blank"
+                    >Forgot/New Password</a
+                  >
+                  <a
+                    href="https://www.mobicint.net/hco/forgotUsername"
+                    target="_blank"
+                    >Forgot Username</a
+                  >
+                </p>
+                <p align="center">
+                  <input
+                    name="imageField"
+                    type="submit"
+                    value="Log-on"
+                    width="125"
+                    height="50"
+                    src="/_layout/images/logon.png"
+                    alt="Login Button"
+                    class="hb-logon"
+                  />
+                  <input type="hidden" name="Action" value="ACT0004" />
+                  <input type="hidden" name="CUID" value="hco" />
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
