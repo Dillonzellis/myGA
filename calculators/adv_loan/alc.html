@@ -1,114 +1,223 @@
-<HTML lang="en">
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Advanced Loan Calculator</title>
+    <!--InternetActive Calculatorsï¿½-->
+    <!--Version 2.0-->
+    <!--Copyright ï¿½ 1998 - 2001 Desert Cactus Software Corporation-->
 
-<HEAD>
+    <!-- <script language="JavaScript" src="style.js"></script> -->
 
-<TITLE>InternetActive Calculators: Advanced Loan Calculator</TITLE>
-<!--InternetActive Calculators™-->
-<!--Version 2.0-->
-<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
 
-<SCRIPT Language="JavaScript" src='style.js'>
-</SCRIPT>
+    <script language="JavaScript" src="alcv.js"></script>
 
-<SCRIPT Language="JavaScript" src='alcv.js'>
-</SCRIPT>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
-})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
-<!-- End Google Tag Manager -->
-</head>
+  <body>
+    <div class="table-wrapper">
+      <table width="500" role="presentation">
+        <tr>
+          <td>
+            <center></center>
+            <form action="alcr.html">
+              <center>
+                <table cellpadding="10" role="presentation">
+                  <tr class="main-header">
+                    <td colspan="2">
+                      <center>
+                        <h1>
+                          <strong>Advanced Loan Calculator</strong>
+                        </h1>
+                      </center>
+                    </td>
+                  </tr>
 
-<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<TABLE WIDTH=500 role="presentation">
-  <tr> 
-    <td> <CENTER>
-      </CENTER>
-      <FORM Action="alcr.html">
-        <CENTER>
-          <TABLE Border=1 Cellpadding=7 role="presentation">
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
-                <CENTER>
-					<h1 style="font-size: 1.125em;"><span class=FontTwo><strong>InternetActive Calculators™</strong>
-                  </span> <br>
-						<span class=FontThree> <strong>Advanced Loan Calculator</strong></span></h1>
-                </CENTER>
-              </TD>
-            </TR>
-            <TR> </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Loan Amount: </span> 
-              </TD>
-              <TD BGCOLOR=#EEFFEE> 
-                <INPUT NAME = LoanAmount style="font-family: Verdana, Arial; font-size: 8pt" title="Loan Amount" onFocus=select(); onBlur = checkLA(this.form); VALUE=25000 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEEE> 
-                <INPUT NAME = InterestRate style="font-family: Verdana, Arial; font-size: 8pt" title="Interest Rate" onFocus=select(); onBlur = checkIR(this.form); VALUE=8 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Years: </span> 
-              </TD>
-              <TD BGCOLOR=#EEEEFF> 
-                <INPUT NAME = NumberOfYears style="font-family: Verdana, Arial; font-size: 8pt" title="Number of Years" onFocus=select(); onBlur = checkY(this.form); VALUE=5 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Periods Per 
-                Year: </span> </TD>
-              <TD BGCOLOR=#FFEEFF> 
-                <INPUT NAME = NumberOfPeriods style="font-family: Verdana, Arial; font-size: 8pt" title="Number of Periods Per Year" onFocus=select(); onBlur = checkP(this.form); VALUE=12 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Additional Principal 
-                Per Period: </span> </TD>
-              <TD BGCOLOR=#EEFFEE> 
-                <INPUT NAME = AdditionalPrincipal style="font-family: Verdana, Arial; font-size: 8pt" title="Additional Principal Per Period" onFocus=select(); onBlur = checkAP(this.form); VALUE=0 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFour> 
-                <INPUT NAME="compound_option" Type="radio" title="Daily Basis" VALUE="0">
-                Compound on a Daily Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Weekly Basis" VALUE="1">
-                Compound on a Weekly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Bi-Weekly Basis" VALUE="2">
-                Compound on a Bi-Weekly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Semi-Monthly Basis" VALUE="3">
-                Compound on a Semi-Monthly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Monthly Basis" VALUE="4" CHECKED>
-                Compound on a Monthly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Quarterly Basis" VALUE="5">
-                Compound on a Quarterly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Semi-Annual Basis" VALUE="6">
-                Compound on a Semi-Annual Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Annual Basis" value="7">
-                Compound on an Annual Basis<BR>
-                </span></TD>
-            </TR>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFive> 
-                <INPUT NAME="calculate_option" Type="radio" title="Payment Only" VALUE="0" CHECKED>
-                Calculate Payment Only<BR>
-                <INPUT NAME="calculate_option" Type="radio" title="Payment and Display Amortization Schedule" VALUE="1">
-                Calculate Payment and Display Amortization Schedule<BR>
-                </span> </TD>
-            </TR>
-          </TABLE>
-          <SCRIPT Language="JavaScript" src='enda.js'>
-</SCRIPT>
-        </center>
-      </form>
-    
-</table>
-</BODY>
-</HTML>
+                  <tr>
+                    <td class="left-col">
+                      <span> Loan Amount:</span>
+                    </td>
+                    <td>
+                      <input
+                        name="LoanAmount"
+                        title="Loan Amount"
+                        onFocus="select();"
+                        onBlur="checkLA(this.form);"
+                        value="25000"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span> Interest Rate: </span>
+                    </td>
+                    <td>
+                      <input
+                        name="InterestRate"
+                        title="Interest Rate"
+                        onFocus="select();"
+                        onBlur="checkIR(this.form);"
+                        value="8"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span> Number of Years: </span>
+                    </td>
+                    <td>
+                      <input
+                        name="NumberOfYears"
+                        title="Number of Years"
+                        onFocus="select();"
+                        onBlur="checkY(this.form);"
+                        value="5"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span>
+                        Number of Periods Per Year:
+                      </span>
+                    </td>
+                    <td>
+                      <input
+                        name="NumberOfPeriods"
+                 
+                        title="Number of Periods Per Year"
+                        onFocus="select();"
+                        onBlur="checkP(this.form);"
+                        value="12"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span>
+                        Additional Principal Per Period:
+                      </span>
+                    </td>
+                    <td>
+                      <input
+                        name="AdditionalPrincipal"
+                        title="Additional Principal Per Period"
+                        onFocus="select();"
+                        onBlur="checkAP(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr class="main-header">
+                    <td colspan="2">
+                      <span>
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Daily Basis"
+                          value="0"
+                        />
+                        Compound on a Daily Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Weekly Basis"
+                          value="1"
+                        />
+                        Compound on a Weekly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Bi-Weekly Basis"
+                          value="2"
+                        />
+                        Compound on a Bi-Weekly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Semi-Monthly Basis"
+                          value="3"
+                        />
+                        Compound on a Semi-Monthly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Monthly Basis"
+                          value="4"
+                          checked
+                        />
+                        Compound on a Monthly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Quarterly Basis"
+                          value="5"
+                        />
+                        Compound on a Quarterly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Semi-Annual Basis"
+                          value="6"
+                        />
+                        Compound on a Semi-Annual Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Annual Basis"
+                          value="7"
+                        />
+                        Compound on an Annual Basis<br />
+                      </span>
+                    </td>
+                  </tr>
+                  <tr class="main-header">
+                    <td colspan="2">
+                      <span>
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Payment Only"
+                          value="0"
+                          checked
+                        />
+                        Calculate Payment Only<br />
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Payment and Display Amortization Schedule"
+                          value="1"
+                        />
+                        Calculate Payment and Display Amortization Schedule<br />
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+                <script language="JavaScript" src="enda.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
