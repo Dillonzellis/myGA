@@ -1,12 +1,12 @@
 // **************************************************************
-// InternetActive Calculators™
+// InternetActive Calculatorsï¿½
 // Version 2.0
-// Copyright © 1998 - 2001 Desert Cactus Software Corporation
+// Copyright ï¿½ 1998 - 2001 Desert Cactus Software Corporation
 // **************************************************************
 
 document.write("<hr width=100% size=1 noshade color=#003399>");
 document.write("<br>");
-document.write("<INPUT Type=button Value=Recalculate style='font-family: Verdana, Arial; font-size: 8pt' onClick=history.go(-1);>");
+document.write("<INPUT Type=button Value=Recalculate class='footer-inputs' onClick=history.go(-1);>");
 document.write("<br>");
 document.write("<br>");
 document.write("<span class=FontSix>");
@@ -18,7 +18,6 @@ document.write("<hr width=100% size=1 noshade color=#003399>");
 document.write("<br>");
 document.write("<center>");
 document.write("<span class=FontSeven>");
-document.write(DCS);
 document.write("</span>");
 document.write("</center>");
 document.write("</FORM>");

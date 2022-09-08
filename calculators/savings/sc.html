@@ -1,140 +1,263 @@
-<HTML lang="en">
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Savings Calculator</title>
+    <!--InternetActive Calculatorsï¿½-->
+    <!--Version 2.0-->
+    <!--Copyright ï¿½ 1998 - 2001 Desert Cactus Software Corporation-->
 
-<HEAD>
+    <!-- <SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT> -->
 
-<TITLE>InternetActive Calculators: Savings Calculator</TITLE>
-<!--InternetActive Calculators™-->
-<!--Version 2.0-->
-<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
 
-<SCRIPT Language="JavaScript" src='style.js'>
-</SCRIPT>
+    <script language="JavaScript" src="scv.js"></script>
 
-<SCRIPT Language="JavaScript" src='scv.js'>
-</SCRIPT>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
-})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
-<!-- End Google Tag Manager -->
-</head>
-
-<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-
-<TABLE WIDTH=500 role="presentation">
-  <tr> 
-    <td> 
-      <CENTER>
-      </CENTER>
-      <FORM Action="scr.html">
-        <CENTER>
-          <TABLE Border=1 Cellpadding=7 role="presentation">
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
-                <CENTER>
-                  <h1 style="font-size: 1.125em;"><span class=FontTwo><strong>InternetActive Calculators™</strong> 
-                  </span> <br>
-					  <span class=FontThree> <strong>Savings Calculator</strong></span></h1>
-                </CENTER>
-              </TD>
-            </TR>
-            <TR> </TR>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#EEEEEE> <span class=FontFour> 
-                <INPUT NAME=calculate_option Type="radio" title="Ending Balance" VALUE="0" CHECKED>
-                <STRONG>Calculate the Ending Balance</STRONG><BR>
-                (Hint: Enter amounts in the <U>Beginning Balance</U> and <U>Periodic 
-                Contribution</U> boxes.)<BR>
-                <BR>
-                <HR>
-                <INPUT NAME=calculate_option Type="radio" title="Beginning Balance" VALUE="1">
-                <STRONG>Calculate the Beginning Balance</STRONG><BR>
-                (Hint: Enter amounts in the <U>Periodic Contribution</U> and <U>Ending 
-                Balance</U> boxes.)<BR>
-                <BR>
-                <HR>
-                <INPUT NAME=calculate_option Type="radio" title="Periodic Contribution" VALUE="2">
-                <STRONG>Calculate the Periodic Contribution</STRONG><BR>
-                (Hint: Enter amounts in the <U>Beginning Balance</U> and <U>Ending 
-                Balance</U> boxes.)<BR>
-                <BR>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Beginning Balance: </span> 
-              </TD>
-              <TD BGCOLOR=#EEFFEE> 
-                <INPUT NAME = BeginningBalance style="font-family: Verdana, Arial; font-size: 8pt" title="Beginning Balance" onFocus=select(); onBlur = checkBB(this.form); VALUE=0 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEEE> 
-                <INPUT NAME = InterestRate style="font-family: Verdana, Arial; font-size: 8pt" title="Interest Rate" onFocus=select(); onBlur = checkIR(this.form); VALUE=8 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Periodic Contribution: 
-                </span> </TD>
-              <TD BGCOLOR=#EEEEFF> 
-                <INPUT NAME = PeriodicContribution style="font-family: Verdana, Arial; font-size: 8pt" title="Periodic Contribution" onFocus=select(); onBlur = checkPC(this.form); VALUE=0 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Periods: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEFF> 
-                <INPUT NAME = NumberOfPeriods style="font-family: Verdana, Arial; font-size: 8pt" title="Number of Periods" onFocus=select(); onBlur = checkNP(this.form); VALUE=0 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Ending Balance: </span> 
-              </TD>
-              <TD BGCOLOR=#EEFFEE> 
-                <INPUT NAME = EndingBalance style="font-family: Verdana, Arial; font-size: 8pt" title="Ending Balance" onFocus=select(); onBlur = checkEB(this.form); VALUE=0 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFour> 
-                <INPUT NAME="compound_option" Type="radio" title="Weekly Basis" VALUE="0">
-                Compound on a Weekly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Monthly Basis" VALUE="1" CHECKED>
-                Compound on a Monthly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Quarterly Basis" VALUE="2">
-                Compound on a Quarterly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Annual Basis" value="3">
-                Compound on an Annual Basis<BR>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFive> <strong> 
-                <INPUT NAME="today" TYPE="checkbox" title="Show Ending Balance" VALUE="1" CHECKED>
-                Show Ending Balance in Current Dollars</strong><BR>
-                (Hint: Check this box to show the ending balance in today's dollars.)<BR>
-                <HR>
-                <strong> 
-                <INPUT NAME="inflation" TYPE="checkbox" title="Adjust for Inflation" VALUE="0">
-                Adjust for Inflation</strong><BR>
-                (Hint: Check this box to inflate the periodic contributions.)<BR>
-                <BR>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Inflation Rate: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEEE> 
-                <INPUT NAME = InflationRate style="font-family: Verdana, Arial; font-size: 8pt" title="Inflation Rate" onFocus=select(); onBlur = checkInf(this.form); VALUE=3 >
-              </TD>
-            </TR>
-          </TABLE>
-          <SCRIPT Langugage="JavaScript" src='enda.js'>
-</SCRIPT>
-        </center>
-      </form>
-</table>
-</BODY>
-</HTML>
+  <body>
+    <div class="table-wrapper">
+      <table width="500" role="presentation">
+        <tr>
+          <td>
+            <center></center>
+            <form action="scr.html">
+              <center>
+                <table cellpadding="10" role="presentation">
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <center>
+                        <h1>
+                          <span class="FontThree">
+                            <strong>Savings Calculator</strong></span
+                          >
+                        </h1>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td colspan="2" class="left-col">
+                      <span class="FontFour">
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Ending Balance"
+                          value="0"
+                          checked
+                        />
+                        <strong>Calculate the Ending Balance</strong><br />
+                        (Hint: Enter amounts in the <u>Beginning Balance</u> and
+                        <u>Periodic Contribution</u> boxes.)<br />
+                        <br />
+                        <hr />
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Beginning Balance"
+                          value="1"
+                        />
+                        <strong>Calculate the Beginning Balance</strong><br />
+                        (Hint: Enter amounts in the
+                        <u>Periodic Contribution</u> and
+                        <u>Ending Balance</u> boxes.)<br />
+                        <br />
+                        <hr />
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Periodic Contribution"
+                          value="2"
+                        />
+                        <strong>Calculate the Periodic Contribution</strong><br />
+                        (Hint: Enter amounts in the <u>Beginning Balance</u> and
+                        <u>Ending Balance</u> boxes.)<br />
+                        <br />
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Beginning Balance: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="BeginningBalance"
+                      
+                        title="Beginning Balance"
+                        onFocus="select();"
+                        onBlur="checkBB(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Interest Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="InterestRate"
+                      
+                        title="Interest Rate"
+                        onFocus="select();"
+                        onBlur="checkIR(this.form);"
+                        value="8"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Periodic Contribution: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="PeriodicContribution"
+                      
+                        title="Periodic Contribution"
+                        onFocus="select();"
+                        onBlur="checkPC(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Number of Periods: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="NumberOfPeriods"
+                      
+                        title="Number of Periods"
+                        onFocus="select();"
+                        onBlur="checkNP(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Ending Balance: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="EndingBalance"
+                      
+                        title="Ending Balance"
+                        onFocus="select();"
+                        onBlur="checkEB(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="left-col">
+                      <span class="FontFour">
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Weekly Basis"
+                          value="0"
+                        />
+                        Compound on a Weekly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Monthly Basis"
+                          value="1"
+                          checked
+                        />
+                        Compound on a Monthly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Quarterly Basis"
+                          value="2"
+                        />
+                        Compound on a Quarterly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Annual Basis"
+                          value="3"
+                        />
+                        Compound on an Annual Basis<br />
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <span class="FontFive">
+                        <strong>
+                          <input
+                            name="today"
+                            type="checkbox"
+                            title="Show Ending Balance"
+                            value="1"
+                            checked
+                          />
+                          Show Ending Balance in Current Dollars</strong
+                        >
+                        (Hint: Check this box to show the ending balance in
+                        today's dollars.)
+                        <hr />
+                        <strong>
+                          <input
+                            name="inflation"
+                            type="checkbox"
+                            title="Adjust for Inflation"
+                            value="0"
+                          />
+                          Adjust for Inflation</strong
+                        >
+                        (Hint: Check this box to inflate the periodic
+                        contributions.)
+                    
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Inflation Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="InflationRate"
+                      
+                        title="Inflation Rate"
+                        onFocus="select();"
+                        onBlur="checkInf(this.form);"
+                        value="3"
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <script Langugage="JavaScript" src="enda.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
