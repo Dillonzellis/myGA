@@ -1,14 +1,14 @@
 // **************************************************************
-// InterenetActive Calculators™
+// InterenetActive Calculatorsï¿½
 // Version 2.0
-// Copyright © 1998 - 2001 Desert Cactus Software Corporation
+// Copyright ï¿½ 1998 - 2001 Desert Cactus Software Corporation
 // **************************************************************
 
 	document.write("<CENTER>");
-	document.write("<TABLE Border=1 Cellpadding=7>");
+	document.write("<TABLE class='amort-table' Cellpadding=10> ");
 
 	document.write("<TR>");
-	document.write("<TD COLSPAN=4 BGCOLOR=#FFFFEE>");
+	document.write("<TD COLSPAN=4 class='main-header'");
 	document.write("<span class=FontTwo>");
 	document.write("<CENTER>");
 	document.write("<STRONG>Retirement Schedule</STRONG>");
@@ -52,7 +52,7 @@
 	document.write("</TR>");
 
 	document.write("<TR>");
-	document.write("<TD BGCOLOR=#FFFFFF>");
+	document.write("<TD BGCOLOR=#EEEEEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	document.write("-");
@@ -60,7 +60,7 @@
 	document.write("</span>");
 	document.write("</TD>");
 		
-	document.write("<TD BGCOLOR=#EEFFEE>");
+	document.write("<TD BGCOLOR=#EEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	document.write("$0.00");
@@ -68,7 +68,7 @@
 	document.write("</span>");
 	document.write("</TD>");
 		
-	document.write("<TD BGCOLOR=#EEFFEE>");
+	document.write("<TD BGCOLOR=#EEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	document.write("$0.00");
@@ -76,7 +76,7 @@
 	document.write("</span>");
 	document.write("</TD>");
 			
-	document.write("<TD BGCOLOR=#EEFFEE>");
+	document.write("<TD BGCOLOR=#EEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	if (SO == 0) {
@@ -122,7 +122,7 @@
 	}
 						
 	document.write("<TR>");
-	document.write("<TD BGCOLOR=#EEFFEE>");
+	document.write("<TD BGCOLOR=#EEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	document.write(PA);
@@ -130,7 +130,7 @@
 	document.write("</span>");
 	document.write("</TD>");
 	
-	document.write("<TD BGCOLOR=#EEFFEE>");
+	document.write("<TD BGCOLOR=#EEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	document.write(currencyPad(UU));
@@ -138,7 +138,7 @@
 	document.write("</span>");
 	document.write("</TD>");
 	
-	document.write("<TD BGCOLOR=#EEFFEE>");
+	document.write("<TD BGCOLOR=#EEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	document.write(currencyPad(MM));
@@ -156,7 +156,7 @@
 		AA = (AA * (1 + (B / 100))) + Math.abs(C);
 	}
 
-	document.write("<TD BGCOLOR=#EEFFEE>");
+	document.write("<TD BGCOLOR=#EEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	document.write(currencyPad(AA));
@@ -191,7 +191,7 @@
 		AA = ZZ;
 
 		document.write("<TR>");
-		document.write("<TD BGCOLOR=#EEFFEE>");
+		document.write("<TD BGCOLOR=#EEE>");
 		document.write("<span class=FontFour>");
 		document.write("<CENTER>");
 		document.write(G);
@@ -199,7 +199,7 @@
 		document.write("</span>");
 		document.write("</TD>");
 		
-		document.write("<TD BGCOLOR=#EEFFEE>");
+		document.write("<TD BGCOLOR=#EEE>");
 		document.write("<span class=FontFour>");
 		document.write("<CENTER>");
 		document.write(currencyPad(UU));
@@ -207,7 +207,7 @@
 		document.write("</span>");
 		document.write("</TD>");
 			
-		document.write("<TD BGCOLOR=#EEFFEE>");
+		document.write("<TD BGCOLOR=#EEE>");
 		document.write("<span class=FontFour>");
 		document.write("<CENTER>");
 		document.write(currencyPad(MM));
@@ -215,7 +215,7 @@
 		document.write("</span>");
 		document.write("</TD>");
 			
-		document.write("<TD BGCOLOR=#EEFFEE>");
+		document.write("<TD BGCOLOR=#EEE>");
 		document.write("<span class=FontFour>");
 		document.write("<CENTER>");
 		document.write(currencyPad(ZZ));
@@ -245,7 +245,7 @@
 // *******************
 
 	document.write("<TR>");
-	document.write("<TD BGCOLOR=#EEFFEE>");
+	document.write("<TD BGCOLOR=#EEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	document.write(RA);
@@ -253,7 +253,7 @@
 	document.write("</span>");
 	document.write("</TD>");
 		
-	document.write("<TD BGCOLOR=#EEFFEE>");
+	document.write("<TD BGCOLOR=#EEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	document.write(currencyPad(UU));
@@ -261,7 +261,7 @@
 	document.write("</span>");
 	document.write("</TD>");
 		
-	document.write("<TD BGCOLOR=#EEFFEE>");
+	document.write("<TD BGCOLOR=#EEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	document.write(currencyPad(MM));
@@ -271,7 +271,7 @@
 			
 	ZZ = (ZZ * (1 + (B / 100))) - (MM * (1 + (B / 100)));
 
-	document.write("<TD BGCOLOR=#EEFFEE>");
+	document.write("<TD BGCOLOR=#EEE>");
 	document.write("<span class=FontFour>");
 	document.write("<CENTER>");
 	document.write(currencyPad(ZZ));
@@ -300,7 +300,7 @@
 		if (ZZ <= MM) { ZZ = 0 }
 
 		document.write("<TR>");
-		document.write("<TD BGCOLOR=#EEFFEE>");
+		document.write("<TD BGCOLOR=#EEE>");
 		document.write("<span class=FontFour>");
 		document.write("<CENTER>");
 		document.write(G);
@@ -308,7 +308,7 @@
 		document.write("</span>");
 		document.write("</TD>");
 		
-		document.write("<TD BGCOLOR=#EEFFEE>");
+		document.write("<TD BGCOLOR=#EEE>");
 		document.write("<span class=FontFour>");
 		document.write("<CENTER>");
 		document.write(currencyPad(UU));
@@ -316,7 +316,7 @@
 		document.write("</span>");
 		document.write("</TD>");
 			
-		document.write("<TD BGCOLOR=#EEFFEE>");
+		document.write("<TD BGCOLOR=#EEE>");
 		document.write("<span class=FontFour>");
 		document.write("<CENTER>");
 		document.write(currencyPad(MM));
@@ -324,7 +324,7 @@
 		document.write("</span>");
 		document.write("</TD>");
 			
-		document.write("<TD BGCOLOR=#EEFFEE>");
+		document.write("<TD BGCOLOR=#EEE>");
 		document.write("<span class=FontFour>");
 		document.write("<CENTER>");
 		document.write(currencyPad(ZZ));

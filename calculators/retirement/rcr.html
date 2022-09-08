@@ -1,187 +1,229 @@
-<HTML lang="en">
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Retirement Calculator</title>
+    <!--InternetActive Calculatorsï¿½-->
+    <!--Version 2.0-->
+    <!--Copyright ï¿½ 1998 - 2001 Desert Cactus Software Corporation-->
 
-<HEAD>
+    <!-- <script language="JavaScript" src="style.js"></script> -->
 
-<TITLE>InternetActive Calculators: Retirement Calculator</TITLE>
-<!--InternetActive Calculators™-->
-<!--Version 2.0-->
-<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
 
-<SCRIPT Language="JavaScript" src='style.js'>
-</SCRIPT>
+    <script language="JavaScript" src="pad.js"></script>
 
-<SCRIPT Language="JavaScript" src='pad.js'>
-</SCRIPT>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
-})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
-<!-- End Google Tag Manager -->
-</head>
-
-<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-
-<TABLE WIDTH=500>
-  <tr> 
-    <td WIDTH=468> 
-      <SCRIPT Language="JavaScript" src='read.js'>
-</SCRIPT>
-      <SCRIPT Language="JavaScript">
-alert("Please wait while Retirement Calculator builds the retirement schedule. This can take up to 30 seconds or more, depending on the speed of your computer's processor and the web browser you are using. Click OK to continue.");
-</SCRIPT>
-      <CENTER>
-      </CENTER>
-      <FORM Method=post>
-        <CENTER>
-          <TABLE Border=1 Cellpadding=7>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
-                <CENTER>
-                  <span class=FontTwo><strong>InternetActive Calculators™</strong> 
-                  </span> <br>
-                  <span class=FontThree> <strong>Retirement Calculator</strong></span>
-                </CENTER><hr size="1" width="100%">
-                <span class=FontThree> 
-                <CENTER>
-                  <strong>Results</strong>
-                </CENTER>
-                </span> </TD>
-            </TR>
-            <TR> </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var SO = getValue(passed,'calculate_option');
-	if (SO == 0) {
-		document.write("Beginning Balance:");
-	}
-	if (SO == 1) {
-		document.write("Beginning Balance:");
-	}
-	if (SO == 2) {
-		document.write("Annual Contribution:");
-	}
-</SCRIPT>
-                </span> </TD>
-              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var A = getValue(passed,'Principal');
-	var C = getValue(passed,'AnnualContribution');
-	if (SO == 0) {
-		document.write(currencyPad(A));
-	}
-	if (SO == 1) {
-		document.write(currencyPad(A));
-	}
-	if (SO == 2) {
-		document.write(currencyPad(C));
-	}
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var B = getValue(passed,'InterestRate');
-	if (B < 0) { B = 0 }
-	document.write(roundingPad((B * 100.00)/100)+"%");
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var SO = getValue(passed,'calculate_option');
-	if (SO == 0) {
-		document.write("Annual Contribution:");
-	}
-	if (SO == 1) {
-		document.write("Annual Income:");
-	}
-	if (SO == 2) {
-		document.write("Annual Income:");
-	}
-</SCRIPT>
-                </span> </TD>
-              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript" src='rcc.js'>
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Years Contributing: 
-                </span> </TD>
-              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	document.write(integerPad(IA));
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Years Withdrawing: 
-                </span> </TD>
-              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	document.write(integerPad(DA));
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Inflation Rate: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	document.write(""+roundingPad((H*100.00)/100)+"%");
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var SO = getValue(passed,'calculate_option');
-	if (SO == 0) {
-		document.write("Annual Income:");
-	}
-	if (SO == 1) {
-		document.write("Annual Contribution:");
-	}
-	if (SO == 2) {
-		document.write("Beginning Balance:");
-	}
-</SCRIPT>
-                </span> </TD>
-              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	if (SO == 0) {
-		document.write(currencyPad(DD));
-	}
-	if (SO == 1) {
-		document.write(currencyPad(Z));
-	}
-	if (SO == 2) {
-		document.write(currencyPad(Z));
-	}
-</SCRIPT>
-                </span> </TD>
-            </TR>
-          </TABLE>
-          <SCRIPT LANGUAGE="JavaScript" src='rca.js'>
-</SCRIPT>
-          <br>
-          <br>
-          <span class=FontFive> PLEASE NOTE: This deposit schedule assumes that 
-          your retirement income keeps pace with inflation. Note that income is 
-          in future dollars. </span> <br>
-          <br>
-          <SCRIPT Language="JavaScript" src='endb.js'>
-</SCRIPT>
-        </center>
-      </form>
-</table>
-</BODY>
-</HTML>
+  <body>
+    <div class="table-wrapper">
+      <table width="500">
+        <tr>
+          <td width="468">
+            <script language="JavaScript" src="read.js"></script>
+            <center></center>
+            <form method="post">
+              <center>
+                <table cellpadding="10">
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <center>
+              
+                        <span class="FontThree">
+                          <strong>Retirement Calculator</strong></span
+                        >
+                      </center>
+                      <hr size="1" width="100%" />
+                      <span class="FontThree">
+                        <center>
+                          <strong>Results</strong>
+                        </center>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var SO = getValue(passed, "calculate_option");
+                          if (SO == 0) {
+                            document.write("Beginning Balance:");
+                          }
+                          if (SO == 1) {
+                            document.write("Beginning Balance:");
+                          }
+                          if (SO == 2) {
+                            document.write("Annual Contribution:");
+                          }
+                        </script>
+                      </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var A = getValue(passed, "Principal");
+                          var C = getValue(passed, "AnnualContribution");
+                          if (SO == 0) {
+                            document.write(currencyPad(A));
+                          }
+                          if (SO == 1) {
+                            document.write(currencyPad(A));
+                          }
+                          if (SO == 2) {
+                            document.write(currencyPad(C));
+                          }
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Interest Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var B = getValue(passed, "InterestRate");
+                          if (B < 0) {
+                            B = 0;
+                          }
+                          document.write(roundingPad((B * 100.0) / 100) + "%");
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var SO = getValue(passed, "calculate_option");
+                          if (SO == 0) {
+                            document.write("Annual Contribution:");
+                          }
+                          if (SO == 1) {
+                            document.write("Annual Income:");
+                          }
+                          if (SO == 2) {
+                            document.write("Annual Income:");
+                          }
+                        </script>
+                      </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript" src="rcc.js"></script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        Number of Years Contributing:
+                      </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write(integerPad(IA));
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Number of Years Withdrawing: </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write(integerPad(DA));
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Inflation Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write(
+                            "" + roundingPad((H * 100.0) / 100) + "%"
+                          );
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var SO = getValue(passed, "calculate_option");
+                          if (SO == 0) {
+                            document.write("Annual Income:");
+                          }
+                          if (SO == 1) {
+                            document.write("Annual Contribution:");
+                          }
+                          if (SO == 2) {
+                            document.write("Beginning Balance:");
+                          }
+                        </script>
+                      </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          if (SO == 0) {
+                            document.write(currencyPad(DD));
+                          }
+                          if (SO == 1) {
+                            document.write(currencyPad(Z));
+                          }
+                          if (SO == 2) {
+                            document.write(currencyPad(Z));
+                          }
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+                <script language="JavaScript" src="rca.js"></script>
+                <br />
+                <br />
+                <span class="FontFive">
+                  PLEASE NOTE: This deposit schedule assumes that your retirement
+                  income keeps pace with inflation. Note that income is in future
+                  dollars.
+                </span>
+                <br />
+                <br />
+                <script language="JavaScript" src="endb.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
