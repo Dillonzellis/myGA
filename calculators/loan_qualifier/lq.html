@@ -1,153 +1,271 @@
-<HTML lang="en">
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Loan Qualifier</title>
+    <!--InternetActive Calculatorsï¿½-->
+    <!--Version 2.0-->
+    <!--Copyright ï¿½ 1998 - 2001 Desert Cactus Software Corporation-->
 
-<HEAD>
+    <!-- <SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT> -->
 
-<TITLE>InternetActive Calculators: Loan Qualifier</TITLE>
-<!--InternetActive Calculators™-->
-<!--Version 2.0-->
-<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<SCRIPT Language="JavaScript" src='style.js'>
-</SCRIPT>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script language="JavaScript" src="lqv.js"></script>
 
-<SCRIPT Language="JavaScript" src='lqv.js'>
-</SCRIPT>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
-})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
-<!-- End Google Tag Manager -->
-</head>
-
-<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-
-<TABLE WIDTH=500 role="presentation">
-  <tr> 
-    <td> <CENTER>
-      </CENTER>
-      <FORM Action="lqr.html">
-        <CENTER>
-          <TABLE Border=1 Cellpadding=7 role="presentation">
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
-                <CENTER>
-                  <h1 style="font-size: 1.125em;"><span class=FontTwo><strong>InternetActive Calculators™</strong> 
-                  </span> <br>
-					  <span class=FontThree> <strong>Loan Qualifier</strong></span></h1>
-                </CENTER>
-              </TD>
-            </TR>
-            <TR> </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Loan Amount: </span> 
-              </TD>
-              <TD BGCOLOR=#EEFFEE> 
-                <INPUT NAME = LoanAmount style="font-family: Verdana, Arial; font-size: 8pt" title="Loan Amount" onFocus=select(); onBlur = checkLA(this.form); VALUE=250000 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEEE> 
-                <INPUT NAME = InterestRate style="font-family: Verdana, Arial; font-size: 8pt" title="Interest Rate" onFocus=select(); onBlur = checkIR(this.form); VALUE=8 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Months: </span> 
-              </TD>
-              <TD BGCOLOR=#EEEEFF> 
-                <INPUT NAME = NumberOfMonths style="font-family: Verdana, Arial; font-size: 8pt" title="Number of Months" onFocus=select(); onBlur = checkM(this.form); VALUE=360 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Buyer's Monthly Income: 
-                </span> </TD>
-              <TD BGCOLOR=#FFEEFF> 
-                <INPUT NAME = BuyersMonthlyIncome style="font-family: Verdana, Arial; font-size: 8pt" title="Buyer's Monthly Income" onFocus=select(); onBlur = checkB(this.form); VALUE=7500 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Real Estate Liabilities: 
-                </span> </TD>
-              <TD BGCOLOR=#EEFFEE> 
-                <INPUT NAME = RealEstateLiabilities style="font-family: Verdana, Arial; font-size: 8pt" title="Real Estate Liabilities" onFocus=select(); onBlur = checkREL(this.form); VALUE=200 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Homeowner's Insurance: 
-                </span> </TD>
-              <TD BGCOLOR=#FFEEEE> 
-                <INPUT NAME = HomeownersInsurance style="font-family: Verdana, Arial; font-size: 8pt" title="Homeowners Insurance" onFocus=select(); onBlur = checkHI(this.form); VALUE=100 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> PMI and HOA Dues: </span> 
-              </TD>
-              <TD BGCOLOR=#EEEEFF> 
-                <INPUT NAME = PMIandHOADues style="font-family: Verdana, Arial; font-size: 8pt" title="PMI and HOA Dues" onFocus=select(); onBlur = checkPMI(this.form); VALUE=100 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Other Housing Debt: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEFF> 
-                <INPUT NAME = OtherHousingDebt style="font-family: Verdana, Arial; font-size: 8pt" title="Other Housing Debt" onFocus=select(); onBlur = checkOHD(this.form); VALUE=0 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Car Payments: </span> 
-              </TD>
-              <TD BGCOLOR=#EEFFEE> 
-                <INPUT NAME = CarPayments style="font-family: Verdana, Arial; font-size: 8pt" title="Car Payments" onFocus=select(); onBlur = checkCP(this.form); VALUE=250 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Credit Card Payments: 
-                </span> </TD>
-              <TD BGCOLOR=#FFEEEE> 
-                <INPUT NAME = CreditCardPayments style="font-family: Verdana, Arial; font-size: 8pt" title="Credit Card Payments" onFocus=select(); onBlur = checkCCP(this.form); VALUE=150 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Child Care Expenses: 
-                </span> </TD>
-              <TD BGCOLOR=#EEEEFF> 
-                <INPUT NAME = ChildCareExpenses style="font-family: Verdana, Arial; font-size: 8pt" title="Child Care Expenses" onFocus=select(); onBlur = checkCCE(this.form); VALUE=0 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Other Non-Housing Debt: 
-                </span> </TD>
-              <TD BGCOLOR=#FFEEFF> 
-                <INPUT NAME = OtherNonHousingDebt style="font-family: Verdana, Arial; font-size: 8pt" title="Other Non-Housing Debt" onFocus=select(); onBlur = checkONHD(this.form); VALUE=0 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Qualifying Income Ratio: 
-                </span> </TD>
-              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
-                <SCRIPT Language="JavaScript">
-document.write(""+(M*100.00)/100+"%");
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Qualifying Debt Ratio: 
-                </span> </TD>
-              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
-                <SCRIPT Language="JavaScript">
-document.write(""+(N*100.00)/100+"%");
-</SCRIPT>
-                </span> </TD>
-            </TR>
-          </TABLE>
-          <SCRIPT Language="JavaScript" src='enda.js'>
-</SCRIPT>
-        </center>
-      </form>
-</table>
-</BODY>
-</HTML>
+  <body>
+    <div class="table-wrapper">
+      <table width="500" role="presentation">
+        <tr>
+          <td>
+            <center></center>
+            <form action="lqr.html">
+              <center>
+                <table cellpadding="10" role="presentation">
+                  <tr class="main-header">
+                    <td colspan="2">
+                      <center>
+                        <h1>
+                          <span class="FontThree">
+                            <strong>Loan Qualifier</strong></span
+                          >
+                        </h1>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Loan Amount: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="LoanAmount"
+                        
+                        title="Loan Amount"
+                        onFocus="select();"
+                        onBlur="checkLA(this.form);"
+                        value="250000"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Interest Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="InterestRate"
+                        
+                        title="Interest Rate"
+                        onFocus="select();"
+                        onBlur="checkIR(this.form);"
+                        value="8"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Number of Months: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="NumberOfMonths"
+                        
+                        title="Number of Months"
+                        onFocus="select();"
+                        onBlur="checkM(this.form);"
+                        value="360"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Buyer's Monthly Income: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="BuyersMonthlyIncome"
+                        
+                        title="Buyer's Monthly Income"
+                        onFocus="select();"
+                        onBlur="checkB(this.form);"
+                        value="7500"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Real Estate Liabilities: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="RealEstateLiabilities"
+                        
+                        title="Real Estate Liabilities"
+                        onFocus="select();"
+                        onBlur="checkREL(this.form);"
+                        value="200"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Homeowner's Insurance: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="HomeownersInsurance"
+                        
+                        title="Homeowners Insurance"
+                        onFocus="select();"
+                        onBlur="checkHI(this.form);"
+                        value="100"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> PMI and HOA Dues: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="PMIandHOADues"
+                        
+                        title="PMI and HOA Dues"
+                        onFocus="select();"
+                        onBlur="checkPMI(this.form);"
+                        value="100"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Other Housing Debt: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="OtherHousingDebt"
+                        
+                        title="Other Housing Debt"
+                        onFocus="select();"
+                        onBlur="checkOHD(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Car Payments: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="CarPayments"
+                        
+                        title="Car Payments"
+                        onFocus="select();"
+                        onBlur="checkCP(this.form);"
+                        value="250"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Credit Card Payments: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="CreditCardPayments"
+                        
+                        title="Credit Card Payments"
+                        onFocus="select();"
+                        onBlur="checkCCP(this.form);"
+                        value="150"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Child Care Expenses: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="ChildCareExpenses"
+                        
+                        title="Child Care Expenses"
+                        onFocus="select();"
+                        onBlur="checkCCE(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Other Non-Housing Debt: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="OtherNonHousingDebt"
+                        
+                        title="Other Non-Housing Debt"
+                        onFocus="select();"
+                        onBlur="checkONHD(this.form);"
+                        value="0"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Qualifying Income Ratio: </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write("" + (M * 100.0) / 100 + "%");
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Qualifying Debt Ratio: </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write("" + (N * 100.0) / 100 + "%");
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+                <script language="JavaScript" src="enda.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
