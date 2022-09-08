@@ -1,72 +1,113 @@
-<HTML lang="en">
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Credit Card Payoff Calculator</title>
+    <!--InternetActive Calculatorsï¿½-->
+    <!--Version 2.0-->
+    <!--Copyright ï¿½ 1998 - 2001 Desert Cactus Software Corporation-->
 
-<HEAD>
+    <!-- <SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT> -->
 
-<TITLE>InternetActive Calculators: Credit Card Payoff Calculator</TITLE>
-<!--InternetActive Calculators™-->
-<!--Version 2.0-->
-<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
 
-<SCRIPT Language="JavaScript" src='style.js'>
-</SCRIPT>
+    <script language="JavaScript" src="ccpcv.js"></script>
 
-<SCRIPT Language="JavaScript" src='ccpcv.js'>
-</SCRIPT>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
-})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
-<!-- End Google Tag Manager -->
-</head>
-
-<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-
-<TABLE WIDTH=500 role="presentation">
-  <tr> 
-    <td> <CENTER>
-      </CENTER>
-      <FORM Action="ccpcr.html">
-        <CENTER>
-          <TABLE Border=1 Cellpadding=7 role="presentation">
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
-                <CENTER>
-                  <h1 style="font-size: 1.125em;"><span class=FontTwo><strong>InternetActive Calculators™</strong> 
-                  </span> <br>
-					  <span class=FontThree> <strong>Credit Card Payoff Calculator</strong></span></h1>
-                </CENTER>
-              </TD>
-            </TR>
-            <TR> </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Monthly Payment: </span> 
-              </TD>
-              <TD BGCOLOR=#EEFFEE> 
-                <INPUT NAME = MonthlyPayment style="font-family: Verdana, Arial; font-size: 8pt" title="Monthly Payment" onFocus=select(); onBlur = checkMP(this.form); VALUE=100 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Credit Card Balance: 
-                </span> </TD>
-              <TD BGCOLOR=#FFEEEE> 
-                <INPUT NAME = CreditCardBalance style="font-family: Verdana, Arial; font-size: 8pt" title="Credit Card Balance" onFocus=select(); onBlur = checkCCB(this.form); VALUE=2500 >
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
-              </TD>
-              <TD BGCOLOR=#EEEEFF> 
-                <INPUT NAME = InterestRate style="font-family: Verdana, Arial; font-size: 8pt" title="Interest Rate" onFocus=select(); onBlur = checkIR(this.form); VALUE=19.8 >
-              </TD>
-            </TR>
-          </TABLE>
-          <SCRIPT Language="JavaScript" src='enda.js'>
-</SCRIPT>
-        </center>
-      </form>
-</table>
-</BODY>
-</HTML>
+  <body>
+    <div class="table-wrapper">
+      <table width="500" role="presentation">
+        <tr>
+          <td>
+            <center></center>
+            <form action="ccpcr.html">
+              <center>
+                <table cellpadding="10" role="presentation">
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <center>
+                        <h1>
+     
+                          <span class="FontThree">
+                            <strong>Credit Card Payoff Calculator</strong></span
+                          >
+                        </h1>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Monthly Payment: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="MonthlyPayment"
+                
+                        title="Monthly Payment"
+                        onFocus="select();"
+                        onBlur="checkMP(this.form);"
+                        value="100"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Credit Card Balance: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="CreditCardBalance"
+                
+                        title="Credit Card Balance"
+                        onFocus="select();"
+                        onBlur="checkCCB(this.form);"
+                        value="2500"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Interest Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="InterestRate"
+                
+                        title="Interest Rate"
+                        onFocus="select();"
+                        onBlur="checkIR(this.form);"
+                        value="19.8"
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <script language="JavaScript" src="enda.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
