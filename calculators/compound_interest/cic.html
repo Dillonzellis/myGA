@@ -1,116 +1,227 @@
-<HTML lang="en">
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Compound Interest Calculator</title>
+    <!--InternetActive Calculatorsï¿½-->
+    <!--Version 2.0-->
+    <!--Copyright ï¿½ 1998 - 2001 Desert Cactus Software Corporation-->
 
-<HEAD>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
 
-<TITLE>InternetActive Calculators: Compound Interest Calculator</TITLE>
-<!--InternetActive Calculators™-->
-<!--Version 2.0-->
-<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+    <!-- <SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT> -->
 
-<SCRIPT Language="JavaScript" src='style.js'>
-</SCRIPT>
+    <script language="JavaScript" src="cicv.js"></script>
 
-<SCRIPT Language="JavaScript" src='cicv.js'>
-</SCRIPT>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
-})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
-<!-- End Google Tag Manager -->
-</head>
-
-<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-
-<TABLE WIDTH=500 role="presentation">
-  <tr> 
-    <td> <CENTER>
-      </CENTER>
-      <FORM Action="cicr.html">
-        <CENTER>
-          <TABLE Border=1 Cellpadding=7 role="presentation">
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
-                <CENTER>
-                  <h1 style="font-size: 1.125em;"><span class=FontTwo><strong>InternetActive Calculators™</strong> 
-                  </span> <br>
-					  <span class=FontThree> <strong>Compound Interest Calculator</strong></span></h1>
-                </CENTER>
-              </TD>
-            </TR>
-            <TR> </TR>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#EEEEEE> <span class=FontFour> 
-                <INPUT NAME=calculate_option Type="radio" title="Compounded Amount" VALUE="0" CHECKED>
-                <STRONG>Calculate the Compounded Amount</STRONG><BR>
-                (Hint: Enter the <U>opening balance</U> in the "Principal" box 
-                below<BR>
-                to calculate what the compounded amount will be.)<BR>
-                <BR>
-                <HR>
-                <INPUT NAME=calculate_option Type="radio" title="Opening Balance" VALUE="1">
-                <STRONG>Calculate the Opening Balance</STRONG><BR>
-                (Hint: Enter the <U>compounded amount</U> in the "Principal" box 
-                below<BR>
-                to calculate the opening balance you need to obtain your goal.)<BR>
-                <BR>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#EEEEEE> <span class=FontFour> 
-                <INPUT NAME=year_option Type="radio" title="360 Day Year" VALUE="0">
-                Base Calculations on a 360-Day Year<BR>
-                <INPUT NAME=year_option Type="radio" title="365 Day Year" VALUE="1" CHECKED>
-                Base Calculations on a 365-Day Year<BR>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Principal: </span> </TD>
-              <TD BGCOLOR=#EEFFEE> 
-                <INPUT NAME=Principal Type=text style="font-family: Verdana, Arial; font-size: 8pt" title="Principal" onFocus = select(); onBlur = checkPR(this.form); VALUE=10000>
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Nominal Interest Rate: 
-                </span> </TD>
-              <TD BGCOLOR=#FFEEEE> 
-                <INPUT NAME=InterestRate Type=text style="font-family: Verdana, Arial; font-size: 8pt" title="Nominal Interest Rate" onFocus = select(); onBlur = checkIR(this.form); VALUE=8>
-              </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Total Number of Days: 
-                </span> </TD>
-              <TD BGCOLOR=#EEEEFF> 
-                <INPUT NAME=NumberOfPeriods Type=text style="font-family: Verdana, Arial; font-size: 8pt" title="Total Number of Days" onFocus = select(); onBlur = checkNP(this.form); VALUE=90>
-              </TD>
-            </TR>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFive> 
-                <INPUT NAME="compound_option" Type="radio" title="Daily Basis" VALUE="0">
-                Compound on a Daily Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Weekly Basis" VALUE="1">
-                Compound on a Weekly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Bi-Weekly Basis" VALUE="2">
-                Compound on a Bi-Weekly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Semi-Monthly Basis" value="3">
-                Compound on a Semi-Monthly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Monthly Basis" value="4" CHECKED>
-                Compound on a Monthly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Quarterly Basis" value="5">
-                Compound on a Quarterly Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Semi-Annual Basis" value="6">
-                Compound on a Semi-Annual Basis<BR>
-                <INPUT NAME="compound_option" Type="radio" title="Annual Basis" value="7">
-                Compound on an Annual Basis<BR>
-                </span> </TD>
-            </TR>
-          </TABLE>
-          <SCRIPT Language="JavaScript" src='enda.js'>
-</SCRIPT>
-        </center>
-      </form>
-</table>
-</BODY>
-</HTML>
+  <body>
+    <div class="table-wrapper">
+      <table width="500" role="presentation">
+        <tr>
+          <td>
+            <center></center>
+            <form action="cicr.html">
+              <center>
+                <table cellpadding="10" role="presentation">
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <center>
+                        <h1>
+                          <span class="FontThree">
+                            <strong>Compound Interest Calculator</strong></span
+                          >
+                        </h1>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td colspan="2" class="left-col">
+                      <span class="FontFour">
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Compounded Amount"
+                          value="0"
+                          checked
+                        />
+                        <strong>Calculate the Compounded Amount</strong><br />
+                        (Hint: Enter the <u>opening balance</u> in the
+                        "Principal" box below<br />
+                        to calculate what the compounded amount will be.)<br />
+                        <br />
+                        <hr />
+                        <input
+                          name="calculate_option"
+                          type="radio"
+                          title="Opening Balance"
+                          value="1"
+                        />
+                        <strong>Calculate the Opening Balance</strong><br />
+                        (Hint: Enter the <u>compounded amount</u> in the
+                        "Principal" box below<br />
+                        to calculate the opening balance you need to obtain your
+                        goal.)<br />
+                        <br />
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="left-col">
+                      <span class="FontFour">
+                        <input
+                          name="year_option"
+                          type="radio"
+                          title="360 Day Year"
+                          value="0"
+                        />
+                        Base Calculations on a 360-Day Year<br />
+                        <input
+                          name="year_option"
+                          type="radio"
+                          title="365 Day Year"
+                          value="1"
+                          checked
+                        />
+                        Base Calculations on a 365-Day Year<br />
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Principal: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="Principal"
+                        type="text"
+                        title="Principal"
+                        onFocus="select();"
+                        onBlur="checkPR(this.form);"
+                        value="10000"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Nominal Interest Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="InterestRate"
+                        type="text"
+                        title="Nominal Interest Rate"
+                        onFocus="select();"
+                        onBlur="checkIR(this.form);"
+                        value="8"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Total Number of Days: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="NumberOfPeriods"
+                        type="text"
+                        title="Total Number of Days"
+                        onFocus="select();"
+                        onBlur="checkNP(this.form);"
+                        value="90"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <span class="FontFive">
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Daily Basis"
+                          value="0"
+                        />
+                        Compound on a Daily Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Weekly Basis"
+                          value="1"
+                        />
+                        Compound on a Weekly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Bi-Weekly Basis"
+                          value="2"
+                        />
+                        Compound on a Bi-Weekly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Semi-Monthly Basis"
+                          value="3"
+                        />
+                        Compound on a Semi-Monthly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Monthly Basis"
+                          value="4"
+                          checked
+                        />
+                        Compound on a Monthly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Quarterly Basis"
+                          value="5"
+                        />
+                        Compound on a Quarterly Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Semi-Annual Basis"
+                          value="6"
+                        />
+                        Compound on a Semi-Annual Basis<br />
+                        <input
+                          name="compound_option"
+                          type="radio"
+                          title="Annual Basis"
+                          value="7"
+                        />
+                        Compound on an Annual Basis<br />
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+                <script language="JavaScript" src="enda.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

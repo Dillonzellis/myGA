@@ -1,144 +1,190 @@
-<HTML lang="en">
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Compound Interest Calculator</title>
+    <!--InternetActive Calculatorsï¿½-->
+    <!--Version 2.0-->
+    <!--Copyright ï¿½ 1998 - 2001 Desert Cactus Software Corporation-->
 
-<HEAD>
+    <!-- <SCRIPT Language="JavaScript" src='style.js'>
+</SCRIPT> -->
 
-<TITLE>InternetActive Calculators: Compound Interest Calculator</TITLE>
-<!--InternetActive Calculators™-->
-<!--Version 2.0-->
-<!--Copyright © 1998 - 2001 Desert Cactus Software Corporation-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
 
-<SCRIPT Language="JavaScript" src='style.js'>
-</SCRIPT>
+    <script language="JavaScript" src="pad.js"></script>
 
-<SCRIPT Language="JavaScript" src='pad.js'>
-</SCRIPT>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
-})(window,document,'script','dataLayer','GTM-5DLR3MW');</script> 
-<!-- End Google Tag Manager -->
-</head>
-
-<BODY bgcolor="#FFFFFF" text="#000000" link="#000099" vlink="#9999FF" alink="#CC0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-
-<TABLE WIDTH=500>
-  <tr> 
-    <td> <SCRIPT Language="JavaScript" src='read.js'>
-</SCRIPT>
-      <br>
-      <FORM Method=post>
-        <CENTER>
-          <TABLE Border=1 Cellpadding=7>
-            <TR> 
-              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
-                <CENTER>
-                  <span class=FontTwo><strong>InternetActive Calculators™</strong> 
-                  </span> <br>
-                  <span class=FontThree> <strong>Compound Interest Calculator</strong></span>
-                </CENTER><hr size="1" width="100%">
-                <span class=FontThree> 
-                <CENTER>
-                  <strong><span class=FontThree>
-                  </span>Results</strong> 
-                </CENTER>
-                </span> </TD>
-            </TR>
-            <TR> </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var CO = getValue(passed,'calculate_option');
-	if (CO == 0) {
-		document.write("Starting Principal:");
-	}
-	if (CO == 1) {
-		document.write("Compounded Amount:");
-	}
-</SCRIPT>
-                </span> </TD>
-              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var A = getValue(passed,'Principal');
-	if (A < 0) { A = 0 }
-	document.write(currencyPad(A));
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var B = getValue(passed,'InterestRate');
-	if (B < 0) { B = 0 }
-	document.write(roundingPad((B * 100.00)/100)+"%");
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Days: </span> 
-              </TD>
-              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var C = getValue(passed,'NumberOfPeriods');
-	if (C < 0) { C = 0 }
-	document.write(integerPad(C));
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Compounding Period: </span> 
-              </TD>
-              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript" src='cico.js'>
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Effective Rate of Interest: 
-                </span> </TD>
-              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript" src='cicc.js'>
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Compounded Rate of Return: 
-                </span> </TD>
-              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	document.write(roundingPad(CEIR * 100.00)+"%");
-</SCRIPT>
-                </span> </TD>
-            </TR>
-            <TR> 
-              <TD BGCOLOR=#EEEEEE> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	var CO = getValue(passed,'calculate_option');
-	if (CO == 0) {
-		document.write("Compounded Amount:");
-	}
-	if (CO == 1) {
-		document.write("Starting Principal:");
-	}
-</SCRIPT>
-                </span> </TD>
-              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
-                <SCRIPT LANGUAGE="JavaScript">
-	document.write(currencyPad(Z));
-</SCRIPT>
-                </span> </TD>
-            </TR>
-          </TABLE>
-          <br>
-          <br>
-          <SCRIPT Language="JavaScript" src='endb.js'>
-</SCRIPT>
-        </center>
-      </form>
-</table>
-</BODY>
-</HTML>
+  <body>
+    <div class="table-wrapper">
+      <table width="500">
+        <tr>
+          <td>
+            <script language="JavaScript" src="read.js"></script>
+            <br />
+            <form method="post">
+              <center>
+                <table cellpadding="10">
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <center>
+                        <span class="FontThree">
+                          <strong>Compound Interest Calculator</strong></span
+                        >
+                      </center>
+                      <hr size="1" width="100%" />
+                      <span class="FontThree">
+                        <center>
+                          <strong
+                            ><span class="FontThree"> </span>Results</strong
+                          >
+                        </center>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var CO = getValue(passed, "calculate_option");
+                          if (CO == 0) {
+                            document.write("Starting Principal:");
+                          }
+                          if (CO == 1) {
+                            document.write("Compounded Amount:");
+                          }
+                        </script>
+                      </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var A = getValue(passed, "Principal");
+                          if (A < 0) {
+                            A = 0;
+                          }
+                          document.write(currencyPad(A));
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Interest Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var B = getValue(passed, "InterestRate");
+                          if (B < 0) {
+                            B = 0;
+                          }
+                          document.write(roundingPad((B * 100.0) / 100) + "%");
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Number of Days: </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var C = getValue(passed, "NumberOfPeriods");
+                          if (C < 0) {
+                            C = 0;
+                          }
+                          document.write(integerPad(C));
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Compounding Period: </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript" src="cico.js"></script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        Effective Rate of Interest:
+                      </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript" src="cicc.js"></script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Compounded Rate of Return: </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write(roundingPad(CEIR * 100.0) + "%");
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          var CO = getValue(passed, "calculate_option");
+                          if (CO == 0) {
+                            document.write("Compounded Amount:");
+                          }
+                          if (CO == 1) {
+                            document.write("Starting Principal:");
+                          }
+                        </script>
+                      </span>
+                    </td>
+                    <td class="left-col">
+                      <span class="FontFour">
+                        <script language="JavaScript">
+                          document.write(currencyPad(Z));
+                        </script>
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+                <br />
+                <br />
+                <script language="JavaScript" src="endb.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
