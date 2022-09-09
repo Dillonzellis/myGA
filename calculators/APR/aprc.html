@@ -1,0 +1,244 @@
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: APR Calculator</title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <!-- <script language="JavaScript" src="style.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script language="JavaScript" src="aprcv.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5DLR3MW");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <div class="table-wrapper">
+      <table width="500" role="presentation">
+        <tr>
+          <td>
+            <center></center>
+            <form action="aprcr.html">
+              <center>
+                <table cellpadding="10" role="presentation">
+                  <tr>
+                    <td colspan="2" class="main-header">
+                      <center>
+                        <h1>
+                          <span class="FontThree">
+                            <strong>APR Calculator</strong></span
+                          >
+                        </h1>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Loan Amount: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="LoanAmount"
+                        title="Loan Amount"
+                        onFocus="select();"
+                        onBlur="checkLA(this.form);"
+                        value="250000"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Interest Rate: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="InterestRate"
+                        title="Interest Rate"
+                        onFocus="select();"
+                        onBlur="checkIR(this.form);"
+                        value="8"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Number of Years: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="NumberOfYears"
+                        title="Number of Years"
+                        onFocus="select();"
+                        onBlur="checkNY(this.form);"
+                        value="30"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Origination Fee: </span>
+                    </td>
+                    <td class="left-col">
+                      <select
+                        name="OriginationFee"
+                        size="1"
+                        title="Origination Fee"
+                      >
+                        <option selected value="0.000">0.000%</option>
+                        <option value="0.125">0.125%</option>
+                        <option value="0.250">0.250%</option>
+                        <option value="0.375">0.375%</option>
+                        <option value="0.500">0.500%</option>
+                        <option value="0.625">0.625%</option>
+                        <option value="0.750">0.750%</option>
+                        <option value="0.875">0.875%</option>
+                        <option value="1.000">1.000%</option>
+                        <option value="1.125">1.125%</option>
+                        <option value="1.250">1.250%</option>
+                        <option value="1.375">1.375%</option>
+                        <option value="1.500">1.500%</option>
+                        <option value="1.625">1.625%</option>
+                        <option value="1.750">1.750%</option>
+                        <option value="1.875">1.875%</option>
+                        <option value="2.000">2.000%</option>
+                        <option value="2.125">2.125%</option>
+                        <option value="2.250">2.250%</option>
+                        <option value="2.375">2.375%</option>
+                        <option value="2.500">2.500%</option>
+                        <option value="2.625">2.625%</option>
+                        <option value="2.750">2.750%</option>
+                        <option value="2.875">2.875%</option>
+                        <option value="3.000">3.000%</option>
+                        <option value="3.125">3.125%</option>
+                        <option value="3.250">3.250%</option>
+                        <option value="3.375">3.375%</option>
+                        <option value="3.500">3.500%</option>
+                        <option value="3.625">3.625%</option>
+                        <option value="3.750">3.750%</option>
+                        <option value="3.875">3.875%</option>
+                        <option value="4.000">4.000%</option>
+                        <option value="4.125">4.125%</option>
+                        <option value="4.250">4.250%</option>
+                        <option value="4.375">4.375%</option>
+                        <option value="4.500">4.500%</option>
+                        <option value="4.625">4.625%</option>
+                        <option value="4.750">4.750%</option>
+                        <option value="4.875">4.875%</option>
+                        <option value="5.000">5.000%</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Discount Points: </span>
+                    </td>
+                    <td class="left-col">
+                      <select
+                        name="DiscountPoints"
+                        size="1"
+                        title="Discount Points"
+                      >
+                        <option selected value="0.000">0.000%</option>
+                        <option value="0.125">0.125%</option>
+                        <option value="0.250">0.250%</option>
+                        <option value="0.375">0.375%</option>
+                        <option value="0.500">0.500%</option>
+                        <option value="0.625">0.625%</option>
+                        <option value="0.750">0.750%</option>
+                        <option value="0.875">0.875%</option>
+                        <option value="1.000">1.000%</option>
+                        <option value="1.125">1.125%</option>
+                        <option value="1.250">1.250%</option>
+                        <option value="1.375">1.375%</option>
+                        <option value="1.500">1.500%</option>
+                        <option value="1.625">1.625%</option>
+                        <option value="1.750">1.750%</option>
+                        <option value="1.875">1.875%</option>
+                        <option value="2.000">2.000%</option>
+                        <option value="2.125">2.125%</option>
+                        <option value="2.250">2.250%</option>
+                        <option value="2.375">2.375%</option>
+                        <option value="2.500">2.500%</option>
+                        <option value="2.625">2.625%</option>
+                        <option value="2.750">2.750%</option>
+                        <option value="2.875">2.875%</option>
+                        <option value="3.000">3.000%</option>
+                        <option value="3.125">3.125%</option>
+                        <option value="3.250">3.250%</option>
+                        <option value="3.375">3.375%</option>
+                        <option value="3.500">3.500%</option>
+                        <option value="3.625">3.625%</option>
+                        <option value="3.750">3.750%</option>
+                        <option value="3.875">3.875%</option>
+                        <option value="4.000">4.000%</option>
+                        <option value="4.125">4.125%</option>
+                        <option value="4.250">4.250%</option>
+                        <option value="4.375">4.375%</option>
+                        <option value="4.500">4.500%</option>
+                        <option value="4.625">4.625%</option>
+                        <option value="4.750">4.750%</option>
+                        <option value="4.875">4.875%</option>
+                        <option value="5.000">5.000%</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Prepaid Interest: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="PrepaidInterest"
+                        title="Prepaid Interest"
+                        onFocus="select();"
+                        onBlur="checkPPI(this.form);"
+                        value="1000"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left-col">
+                      <span class="FontFour"> Lender's Fees: </span>
+                    </td>
+                    <td class="left-col">
+                      <input
+                        name="LendersFees"
+                        title="Lenders Fees"
+                        onFocus="select();"
+                        onBlur="checkLF(this.form);"
+                        value="500"
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <script language="JavaScript" src="enda.js"></script>
+              </center>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
