@@ -38,8 +38,14 @@
 .inner-page-header {
   color: var(--clr-text-100) !important;
   text-align: center !important;
-  font-size: var(--fs-700) !important;
+  font-size: var(--fs-600) !important;
   font-weight: var(--fw-600) !important;
+}
+
+@media (min-width: 40em) {
+  .inner-page-header {
+    font-size: var(--fs-700) !important;
+  }
 }
 
 .body-text-100 {
