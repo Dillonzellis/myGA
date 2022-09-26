@@ -14,6 +14,7 @@
   --fs-450: 1.5rem;
   --fs-500: 2rem;
   --fs-600: 3rem;
+  --fs-700: 4rem;
 
   --fw-600: 600;
   --fw-700: 700;
@@ -35,10 +36,10 @@
 }
 
 .inner-page-header {
-  color: var(--clr-text-500);
-  text-align: center;
-  font-size: var(--fs-600);
-  font-weight: var(--fw-600);
+  color: var(--clr-text-100) !important;
+  text-align: center !important;
+  font-size: var(--fs-700) !important;
+  font-weight: var(--fw-600) !important;
 }
 
 .body-text-100 {
