@@ -105,11 +105,13 @@ small {
   padding: 1rem;
   font-size: var(--fs-450);
   font-weight: var(--fw-600);
+
+  border-radius: 3px;
 }
 
-@media (min-width: 30em) {
+@media (min-width: 50em) {
   .accent-box {
-    padding: 2rem;
+    padding: 1.5rem;
     font-size: var(--fs-500);
   }
 }
