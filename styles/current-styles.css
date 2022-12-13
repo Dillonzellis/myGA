@@ -27,6 +27,18 @@
   gap: var(--gap, 1rem);
 }
 
+.flex-col {
+  display: flex;
+  gap: var(--gap, 1rem);
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .flex-row-md {
+    flex-direction: row;
+  }
+}
+
 .center {
   justify-content: center;
 }
