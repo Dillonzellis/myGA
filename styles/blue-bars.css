@@ -1,0 +1,64 @@
+.bars {
+    display: grid;
+    gap: 0.125rem;
+    align-items: center;
+}
+
+@media(min-width:768px){
+    .bars{
+        grid-template-columns: 2fr 1fr 2fr;
+        gap: 0.25rem;
+    }
+}
+
+.bar{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+
+    font-weight: 600;
+   
+  
+}
+
+@media(min-width:768px){
+    .bar{
+        padding: 1.25rem 0;
+    }
+}
+
+.bars .bgc-blue {
+    background-color: #04A6E1;
+    color: #023CA6;
+}
+
+.bars .bgc-blue:hover{
+    background-color: #003ca6;
+    color: #fff;
+}
+
+.bars .bgc-blue:hover a{
+    color: #fff;
+}
+
+.bars .bgc-gold {
+    background-color: hsl(49, 99%, 49%);
+    color: #606A6D;
+}
+
+.bars .bgc-gold:hover {
+    background-color: hsl(49, 99%, 60%);
+    /* color: white; */
+}
+
+.bars .bgc-blue > a {
+    color: #023CA6;
+}
+
+.bars .bgc-blue > a:hover {
+    color: #fff;
+}
+
+.bars .bgc-gold > a {
+    color: #023CA6;
+}

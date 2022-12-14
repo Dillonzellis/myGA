@@ -27,18 +27,6 @@
   gap: var(--gap, 1rem);
 }
 
-.flex-col {
-  display: flex;
-  gap: var(--gap, 1rem);
-  flex-direction: column;
-}
-
-@media (min-width: 768px) {
-  .flex-row-md {
-    flex-direction: row;
-  }
-}
-
 .center {
   justify-content: center;
 }
@@ -1054,3 +1042,34 @@ table td {
   > span.et_pb_contact_field_options_title {
   display: none;
 }
+
+#sp-ea-1886 .ea-header {
+  padding-bottom: 0;
+  background-color: #003ca6;
+}
+
+#sp-ea-1886 .ea-header > a {
+  color: #fff !important;
+}
+
+#sp-ea-1886 .ea-header > a > i {
+  color: #fff !important;
+}
+
+.flex-col {
+  display: flex;
+  gap: var(--gap, 1rem);
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .flex-row-md {
+    flex-direction: row;
+  }
+}
+
+#wpfront-notification-bar-table > tbody > tr > td > div{
+	padding: 1rem 0.5rem;
+}
+
+
