@@ -1,0 +1,42 @@
+.fs-500{
+    font-size: 1.25rem;
+}
+
+@media(min-width: 768px){
+    .fs-500{
+        font-size: 1.5rem;
+    }
+}
+
+
+.fs-700{
+    font-size: 1.875rem;
+}
+
+@media(min-width: 768px){
+    .fs-700{
+        font-size: 3.125rem;
+    }
+}
+
+@media(min-width: 1200px){
+    .fs-700{
+        font-size: 4.375rem;
+    }
+}
+
+.lh-425{
+    line-height: 1.125;
+}
+
+.clr-primary-400{
+    color:#003ca6;
+}
+
+.p-0{
+    padding: 0 !important;
+}
+
+.sup{
+    font-size:0.5rem;
+}
