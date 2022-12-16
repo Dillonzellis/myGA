@@ -1,0 +1,214 @@
+@use "/src/sass/abstracts/" as *;
+@use "/src/sass/base/" as *;
+
+// Padding & Margin
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-400 {
+  padding: 1rem;
+}
+
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.py-400 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-450 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-500 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-650 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+
+.pb-0 {
+  padding-bottom: 0.5rem !important;
+}
+
+// .pb-200 {
+//   padding-bottom: 0.5rem !important;
+// }
+
+// .pb-400 {
+//   padding-bottom: 1rem !important;
+// }
+
+// .pb-475-lg {
+//  @include breakpoint(lg) {
+//     padding-bottom: 1.75rem;
+//   }
+// }
+
+// .m-0 {
+//   margin: 0 !important;
+// }
+
+// .mb-0 {
+//   margin-bottom: 0 !important;
+// }
+
+.mb-200 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-400 {
+  margin-bottom: 1rem !important;
+}
+
+.mb-500 {
+  margin-bottom: 1.5rem !important;
+}
+
+
+.mb-600 {
+  margin-bottom: 2rem;
+}
+
+.mb-650-min-md {
+  @include breakpoint(md) {
+    margin-bottom: 3rem !important;
+  }
+
+}
+
+.mb-700 {
+  margin-bottom: 4.5rem;
+}
+
+.mr-200 {
+  margin-right: 0.5rem;
+}
+
+
+// .mb-700 {
+//   margin-bottom: 3rem;
+// }
+
+// .mb-400-max-lg {
+//   @include breakpoint-down(lg) {
+//     margin-bottom: 1rem;
+//   }
+// }
+
+// .mb-400-max-xl {
+//   @include breakpoint-down(xl) {
+//     margin-bottom: 1rem;
+//   }
+// }
+
+// .mb-700-max-lg {
+//   @include breakpoint-down(lg) {
+//     margin-bottom: 3rem;
+//   }
+// }
+
+// .mb-700-min-lg {
+//  @include breakpoint(lg) {
+//     margin-bottom: 3rem;
+//   }
+// }
+
+// .mt-0 {
+//   margin-top: 0 !important;
+// }
+
+// .mt--450-max-lg {
+//   @include breakpoint-down(lg) {
+//     margin-top: -1.5rem;
+//   }
+// }
+
+// .my-400 {
+//   margin-top: 1rem;
+//   margin-bottom: 1rem;
+// }
+
+.m-inline-auto {
+  margin-inline: auto !important;
+}
+
+// .m-start-auto {
+//   margin-inline-start: auto !important;
+// }
+
+.m-inline-auto-max-lg {
+  @include breakpoint-down(lg) {
+    margin-inline: auto !important;
+  }
+}
+
+// Width
+
+// .ch-max-width {
+//   @include breakpoint(lg) {
+//     max-width: 56ch;
+//   }
+// }
+
+// .w-100-max-lg {
+//   @include breakpoint(md) {
+//     width: 100% !important;
+//   }
+// }
+
+//   Content Spacing
+
+// .content-space-100 {
+//   padding: 0.5rem 0 !important;
+// }
+
+// .content-space-150 {
+//   padding: 1rem 0 !important;
+// }
+
+// .content-space-200 {
+//   padding: 1rem 0 !important;
+
+//   @include breakpoint(md) {
+//     padding: 1.5rem 0 !important;
+//   }
+// }
+
+// .content-space-400 {
+//   padding: 1.5rem 0 !important;
+
+//   @include breakpoint(lg) {
+//     padding: 3rem 0 !important;
+//   }
+// }
+
+// .content-space-700 {
+//   padding: 2rem 0 !important;
+
+//   @include breakpoint(lg) {
+//     padding: 8rem 0 !important;
+//   }
+// }
+
+// .content-space-0-lg {
+//  @include breakpoint(lg) {
+//     padding: 0 !important;
+//   }
+// }
+
+// .content-space-200-lg {
+//  @include breakpoint(lg) {
+//     padding: 1.5rem 0 !important;
+//   }
+// }

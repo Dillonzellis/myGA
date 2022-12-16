@@ -1,0 +1,41 @@
+.et-l--header ul {
+    line-height: unset !important;
+  }
+  
+  ul {
+    padding: 0 !important;
+  }
+  
+  .nav-container ul {
+    list-style: none !important;
+  }
+  
+  .et_pb_section{
+    padding: 0;
+  }
+  
+  .et_pb_column{
+    margin-bottom: 0;
+  }
+  
+  .et_pb_row, .et_pb_module{
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+
+  h1, h2, h3, h4, h5, h6 {
+    color: unset;
+    padding-bottom: 0;
+    line-height: unset;
+    font-weight: unset;
+    font-size: unset;
+}
+
+p{
+  padding-bottom: 0;
+}
+
+.et_pb_section, .et_pb_row {
+	padding: 0;
+}

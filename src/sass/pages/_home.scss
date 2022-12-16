@@ -1,0 +1,123 @@
+@use "/src/sass/abstracts/"as *;
+@use "/src/sass/base/"as *;
+
+
+.card {
+
+    // max-width: rem(370);
+    // max-height: rem(286);
+
+    text-align: center;
+
+    border: solid 1px $clr-primary-400;
+    border-radius: 15px;
+
+    // padding: rem(25);
+
+    transform: scale(1);
+    transition: transform 200ms ease;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.05) translateY(-.125em);
+
+        &::before {
+            opacity: .3;
+        }
+    }
+
+    &__content{
+        padding: 1rem 1.5rem;
+        max-width: rem(300);
+        @include breakpoint(sm){
+            padding: 2rem 6rem;
+            max-width: 350px;
+            max-height: 300px;
+        }
+    }
+
+    .fa-fas {
+        font-size: rem(37);
+        color: $clr-primary-400;
+
+        border: 5px solid $clr-primary-400;
+        border-radius: 100vmax;
+
+        width: rem(70);
+        height: rem(70);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__header {
+        text-decoration: underline;
+    }
+
+    &__hr {
+        background-color: #F1F1F1;
+        // display: block;
+        height: 4px;
+        // margin: -5px auto 15px;
+        width: rem(50);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__btn {
+
+        display: inline-flex;
+        cursor: pointer;
+        text-transform: capitalize;
+        border: 0;
+        border-radius: 100vmax;
+        padding: 0.8em 1.25em;
+        line-height: 1;
+
+        color: $clr-neutral-100;
+        background-color: $clr-accent-400;
+
+        transform: scale(1);
+        transition: transform 200ms ease;
+
+        a {
+            color: $clr-neutral-100;
+        }
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05) translateY(-.125em);
+
+            &::before {
+                opacity: .3;
+            }
+        }
+
+    }
+}
+
+.green-cta-section {
+    padding: rem(107) 0 !important;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.trustage-section {
+//    justify-content: center;
+    .grid {
+        display: grid;
+        @include breakpoint(lg){
+            grid-template-columns: 1.5fr 2fr;
+            // img{
+            //     margin-inline: auto;
+            // }
+        }
+        
+    }
+
+    hr {
+        border-top: none;
+        border-color: #ccc;
+    }
+}

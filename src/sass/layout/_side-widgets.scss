@@ -1,0 +1,17 @@
+@use '/src/sass/abstracts/'as *;
+@use '/src/sass/base/'as *;
+
+
+
+
+
+
+.side-widget {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+
+    ul {
+        list-style-type: none;
+    }
+}

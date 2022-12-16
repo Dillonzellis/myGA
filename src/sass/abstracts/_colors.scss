@@ -1,0 +1,26 @@
+:root {
+   --clr-primary-400: hsl(212, 100%, 23%);
+   --clr-primary-500: hsl(212, 62%, 20%);
+  
+
+   --clr-accent-400: hsl(345, 85%, 44%);
+
+   --clr-tertiary-400: hsl(107, 90%, 28%);
+
+   --clr-neutral-100: hsl(0, 0%, 100%);
+   --clr-neutral-400: hsl(0, 0%, 97%);
+   --clr-neutral-700: hsl(0, 0%, 29%);
+   --clr-neutral-900: hsl(0, 0%, 0%);
+}
+
+$clr-primary-400: var(--clr-primary-400);
+$clr-primary-500: var(--clr-primary-500);
+
+$clr-accent-400: var(--clr-accent-400);
+
+$clr-tertiary-400: var(--clr-tertiary-400);
+
+$clr-neutral-100: var(--clr-neutral-100);
+$clr-neutral-400: var(--clr-neutral-400);
+$clr-neutral-700: var(--clr-neutral-700);
+$clr-neutral-900: var(--clr-neutral-900);

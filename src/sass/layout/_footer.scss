@@ -1,0 +1,33 @@
+@use '/src/sass/abstracts/' as *;
+@use '/src/sass/base/' as *;
+
+
+.footer{
+    .grid{
+        // display: grid;
+        // gap: 1rem;
+        // justify-items: center;
+        @include breakpoint(md){
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+// .bottom-footer{
+
+//     .footer-nav{
+
+//     }
+
+//     .footer-logos{
+//         @media(min-width:(em(600))){
+//             gap: 4rem;
+//         }
+//     }
+
+//     .rt-col{
+//         @include breakpoint-down(sm){
+//             gap: 0;
+//         }
+//     }
+// }

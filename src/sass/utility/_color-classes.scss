@@ -1,0 +1,50 @@
+@use "/src/sass/abstracts/" as *;
+@use "/src/sass/base/" as *;
+
+// .bgc-primary-300{
+//     background-color: $clr-primary-300;
+//   }
+
+.bgc-primary-400 {
+  background-color: $clr-primary-400;
+}
+
+.bgc-primary-500 {
+  background-color: $clr-primary-500;
+}
+
+// .bgc-primary-400-min-lg {
+//   @include breakpoint(lg) {
+//     background-color: $clr-primary-400;
+//   }
+// }
+
+// .bgc-accent-400 {
+//   background-color: $clr-accent-400;
+// }
+
+// .bgc-neutral-100 {
+//   background-color: $clr-neutral-100;
+// }
+
+.bgc-neutral-400 {
+    background-color: $clr-neutral-400;
+}
+
+.bgc-tertiary-400 {
+    background-color: $clr-tertiary-400;
+}
+
+// .bgc-neutral-700 {
+//   background-color: $clr-neutral-700;
+// }
+
+// .bgc-neutral-700-min-lg {
+//   @include breakpoint(lg) {
+//     background-color: $clr-neutral-700;
+//   }
+// }
+
+// .bgc-primary-gradient{
+//   background: linear-gradient(359.28deg, #1A4789 11.87%, #000000 194.74%);
+// }

@@ -1,0 +1,76 @@
+@use '/src/sass/abstracts/' as *;
+@use '/src/sass/base/' as *;
+
+
+.wide-container {
+  --max-width: 1750px;
+  --container-padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
+  margin-inline: auto;
+}
+
+
+.container-de {
+  --max-width: 1250px;
+  --container-padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
+  margin-inline: auto;
+
+  @include breakpoint(md) {
+    --container-padding: 3rem;
+  }
+}
+
+// .container-sm {
+//   --max-width: 1200px;
+//   --container-padding: 1rem;
+
+//   width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
+//   margin-inline: auto;
+// }
+
+
+.even-columns {
+  display: grid;
+
+  @include breakpoint(lg) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+// .even-columns-nav {
+//   display: grid;
+
+//   @include breakpoint(lg) {
+//     grid-auto-flow: column;
+//     grid-template-columns: 1fr 1.5fr;
+//   }
+// }
+
+// .col-1-max-md {
+//   @include breakpoint-down(md) {
+//     order: 1;
+//   }
+// }
+
+.col-1-max-lg {
+  @include breakpoint-down(lg) {
+    order: 1;
+  }
+}
+
+// .col-2-max-md {
+//   @include breakpoint-down(md) {
+//     order: 2;
+//   }
+// }
+
+.col-2-max-lg {
+  @include breakpoint-down(lg) {
+    order: 2;
+  }
+}

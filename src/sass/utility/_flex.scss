@@ -1,0 +1,188 @@
+@use "/src/sass/abstracts/" as *;
+@use "/src/sass/base/" as *;
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+// .flex-md{
+//   @include breakpoint(md) {
+//     display: flex;
+//     gap: var(--gap, 1rem);
+//   }
+// }
+
+// .flex-lg{
+//   @include breakpoint(lg) {
+//     display: flex;
+//     gap: var(--gap, 1rem);
+//   }
+// }
+
+// .flex-xl{
+//   @include breakpoint(xl) {
+//     display: flex;
+//     gap: var(--gap, 1rem);
+//   }
+// }
+
+.flex-col {
+  display: flex;
+  gap: var(--gap, 1rem);
+  flex-direction: column;
+}
+
+// .flex-col-max-sm {
+//   @include breakpoint-down(sm) {
+//     display: flex;
+//     gap: var(--gap, 1rem);
+//     flex-direction: column;
+//   }
+// }
+
+// .flex-col-reverse{
+//   display: flex;
+//   gap: var(--gap, 1rem);
+//   flex-direction: column-reverse;
+// }
+
+// .flex-col-reverse-lg{
+//   @media(min-width:$lg){
+//     display: flex;
+//     gap: var(--gap, 1rem);
+//     flex-direction: column-reverse;
+//   }
+// }
+
+.flex-col-md {
+  @include breakpoint(md) {
+    display: flex;
+    gap: var(--gap, 1rem);
+    flex-direction: column;
+  }
+}
+
+// .flex-col-lg{
+//   @include breakpoint(lg) {
+//     display: flex;
+//     gap: var(--gap, 1rem);
+//     flex-direction: column;
+//   }
+// }
+
+// .flex-col-center {
+//   display: flex;
+//   gap: var(--gap, 1rem);
+//   flex-direction: column;
+//   justify-content: center;
+// }
+
+// .flex-row{
+//   flex-direction: row;
+// }
+
+// .flex-row-sm {
+//   @include breakpoint(sm) {
+//     flex-direction: row;
+//   }
+// }
+
+.flex-row-md {
+  @include breakpoint(md) {
+    flex-direction: row;
+  }
+}
+
+.flex-row-lg {
+  @include breakpoint(lg) {
+    flex-direction: row;
+  }
+}
+
+.flex-row-xl {
+  @include breakpoint(xl) {
+    flex-direction: row;
+  }
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-items-center {
+  justify-items: center;
+}
+
+.j-around {
+  justify-content: space-around;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+
+// .j-end {
+//   justify-content: end;
+// }
+
+// .j-even {
+//   justify-content: space-evenly;
+// }
+
+.a-center {
+  align-items: center;
+}
+
+// .a-items-center-lg{
+//   @include breakpoint(lg) {
+//     align-items: center;
+//   }
+// }
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-0 {
+  gap: 0;
+}
+
+.gap-0-min-md {
+  @include breakpoint(md) {
+    gap: 0;
+  }
+
+}
+
+// .gap-100-max-lg {
+//   @include breakpoint-down(lg) {
+//     gap: 0.25rem;
+//   }
+// }
+
+.gap-200 {
+  gap: 0.5rem;
+}
+
+.gap-400 {
+  gap: 1rem;
+}
+
+.gap-500-min-md {
+  @include breakpoint(md) {
+    gap: 2rem;
+  }
+}
+
+.gap-500 {
+  gap: 2rem;
+}
+
+.gap-600 {
+  gap: 3rem;
+}

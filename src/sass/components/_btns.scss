@@ -1,0 +1,93 @@
+@use '/src/sass/abstracts/' as *;
+@use '/src/sass/base/' as *;
+
+
+
+.btn {
+
+    display: inline-flex;
+    cursor: pointer;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 100vmax;
+    padding: 0.8em 1.25em;
+    line-height: 1;
+
+    color: $clr-neutral-100;
+    background-color: $clr-accent-400;
+
+    transform: scale(1);
+    transition: transform 200ms ease;
+
+    a {
+        color: $clr-neutral-100;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.05) translateY(-.125em);
+
+        &::before {
+            opacity: .3;
+        }
+    }
+
+}
+
+// .btn {
+//     display: inline-flex;
+//     cursor: pointer;
+//     text-decoration: none;
+//     text-transform: capitalize;
+//     border: 0;
+//     border-radius: 100vmax;
+//     padding: 0.8em 1.25em !important;
+//     font-weight: $fw-bold;
+//     line-height: 1;
+//     font-size: $fs-button;
+
+//     transform: scale(1);
+//     transition: transform 200ms ease;
+
+//     color: $clr-neutral-100;
+//     background-color: $clr-accent-400;
+//     box-shadow: 0 1.125em 1em -1em $clr-accent-500;
+
+//     a {
+//         color: $clr-neutral-100;
+//     }
+
+//     &:hover,
+//     &:focus {
+//         transform: scale(1.05) translateY(-.125em);
+
+//         &::before {
+//             opacity: .3;
+//         }
+//     }
+// }
+
+// .nav-btn {
+//   @include breakpoint(lg) {
+//     text-decoration: none !important;
+//     text-transform: capitalize !important;
+//     border: 0 !important;
+//     border-radius: 100vmax !important;
+//     padding: 0.35em 0.75em !important;
+//     font-weight: $fw-bold !important;
+//     line-height: 1;
+//     font-size: $fs-button !important;
+
+//     color: $clr-neutral-100 !important;
+//     background-color: $clr-accent-400 !important;
+
+//     a {
+//       color: $clr-neutral-100 !important;
+//     }
+
+//     &:hover,
+//     &:focus {
+//       background-color: $clr-accent-400 !important;
+//     }
+//   }
+// }

@@ -1,0 +1,138 @@
+@use "/src/sass/base/" as *;
+@use "/src/sass/abstracts/" as *;
+
+// Font Sizes
+
+.fs-300 {
+  font-size: $fs-300;
+}
+
+.fs-400 {
+    font-size: $fs-400;
+}
+
+.fs-425 {
+    font-size: $fs-425;
+}
+
+.fs-450 {
+    font-size: $fs-450;
+}
+
+.fs-500 {
+    font-size: $fs-500;
+}
+
+// .fs-475 {
+//   font-size: $fs-475;
+// }
+
+// .fs-625 {
+//   font-size: $fs-625;
+// }
+
+// .fs-650 {
+//   font-size: $fs-650;
+// }
+
+// .fs-900 {
+//   font-size: $fs-900;
+// }
+
+// Weights
+
+.fw-regular{
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: $fw-medium;
+}
+
+.fw-semi-bold {
+    font-weight: $fw-semi-bold;
+}
+
+.fw-bold {
+    font-weight: $fw-bold;
+}
+
+//   Color
+
+// .clr-primary-400 {
+//   color: $clr-primary-400;
+// }
+
+.clr-neutral-100 {
+    color: $clr-neutral-100;
+}
+
+.clr-neutral-700 {
+  color: $clr-neutral-700;
+}
+
+.clr-neutral-900 {
+    color: $clr-neutral-900;
+}
+
+.clr-accent-400{
+    color: $clr-accent-400;
+}
+
+// Font Family
+
+.ff-primary {
+    font-family: $ff-primary;
+}
+
+// .ff-accent {
+//   font-family: $ff-accent;
+// }
+
+// .span-highlight {
+//   span {
+//     color: $clr-primary-400;
+//   }
+// }
+
+// .span-highlight-dark{
+//   span{
+//     color: $clr-primary-400;
+//   }
+// }
+
+// .upper{
+//   text-transform: uppercase;
+// }
+
+.underline{
+    text-decoration: underline !important;
+}
+
+// Hyperlinks
+
+// .neutral-100-a {
+//   a {
+//     color: $clr-neutral-100;
+//   }
+// }
+
+  .highlight-a{
+    a{
+        color: $clr-accent-400;
+    }
+}
+
+// Line Heights
+
+// .lh-400 {
+//   line-height: 1 !important;
+// }
+
+.lh-425 {
+  line-height: 1.125 !important;
+}
+
+.lh-450 {
+  line-height: 1.5 !important;
+}

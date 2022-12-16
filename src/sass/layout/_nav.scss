@@ -1,0 +1,51 @@
+@use '/src/sass/abstracts/' as *;
+@use '/src/sass/base/' as *;
+
+.nav{
+    .btn{
+        border-radius: 5px;
+        padding: 0.5em 1em;
+    }
+}
+
+.nav-menu{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    // padding-top: 0.5rem;
+    // padding-bottom: 0.5rem;
+}
+
+
+// #mega-menu-primary-menu {
+//     @include breakpoint(lg) {
+//         display: flex !important;
+//         justify-content: space-between;
+//         align-items: center;
+//     }
+// }
+
+// .mega-menu-link {
+//     color: $clr-primary-400 !important;
+//     font-weight: $fw-bold !important;
+//     font-size: $fs-425 !important;
+//     font-family: $ff-accent !important;
+
+//     @include breakpoint-down(lg) {
+//         text-align: center !important;
+//     }
+
+//     .mega-indicator {
+//         color: $clr-accent-400 !important;
+
+//         @include breakpoint-down(lg) {
+//             float: unset !important;
+//         }
+//     }
+// }
+
+
+// #mega-menu-item-225862>a {
+//     &:hover {
+//         background: transparent !important;
+//     }
+// }

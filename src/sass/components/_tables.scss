@@ -1,0 +1,205 @@
+@use '/src/sass/abstracts/' as *;
+@use '/src/sass/base/' as *;
+
+// .rates-table {
+
+//     table,
+//     tr,
+//     td,
+//     th {
+//         border: 0.25px solid $clr-neutral-700;
+//     }
+
+//     table {
+//         border-spacing: 0;
+//         width: 100%;
+
+//         th {
+//             background-color: $clr-primary-400;
+//             color: $clr-neutral-100;
+//             font-size: $fs-400;
+
+//             padding: 0.5rem 1rem;
+
+//             span {
+//                 font-size: $fs-400;
+//             }
+//         }
+
+//         tr:nth-child(odd) {
+//             background-color: rgb(235, 235, 235);
+//         }
+
+//         td {
+//             padding: 0.25rem 1rem;
+
+//             &:not(:first-child) {
+//                 text-align: center;
+//             }
+//         }
+//     }
+
+//     @media(min-width:30em) {
+//         table {
+//             border-spacing: 0;
+
+//             th {
+//                 background-color: $clr-primary-400;
+//                 color: $clr-neutral-100;
+//                 font-size: $fs-450;
+//             }
+
+//             td {
+//                 padding: 0.5rem 1rem;
+//             }
+//         }
+//     }
+// }
+
+.res-table {
+    table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    table,
+    tr,
+    td,
+    th {
+        border: 0.25px solid $clr-neutral-700;
+    }
+
+    th {
+        background-color: $clr-accent-400;
+        color: $clr-neutral-100;
+        font-size: $fs-400;
+
+        padding: 0.5rem 1rem;
+    }
+
+
+    // table tr {
+    //     background-color: #f8f8f8;
+    //     border: 1px solid #ddd;
+    //     padding: .35em;
+    // }
+
+    td {
+        padding: 0.25rem 1rem;
+
+        // &:not(:first-child) {
+        //     text-align: center;
+        // }
+    }
+
+
+
+
+    // table th,
+    // table td {
+    //     padding: .625em;
+    //     text-align: center;
+    // }
+
+    // table th {
+    //     font-size: .85em;
+    //     letter-spacing: .1em;
+    //     text-transform: uppercase;
+    // }
+
+    @media(min-width:600px) {
+        table {
+            border-spacing: 0;
+
+            th {
+                background-color: $clr-accent-400;
+                color: $clr-neutral-100;
+                font-size: $fs-425;
+            }
+
+            td {
+                padding: 0.5rem 1rem;
+            }
+
+            tr:nth-child(odd) {
+                background-color: rgb(235, 235, 235);
+            }
+        }
+    }
+
+    @media screen and (max-width: 930px) {
+        table {
+            border: 0;
+        }
+
+        table thead {
+            border: none;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        tr {
+            background-color: rgb(235, 235, 235);
+        }
+
+        // th {
+        //     color: $clr-primary-400;
+        // }
+
+        table th,
+        table td {
+            // padding: .625em;
+            // text-align: center;
+
+        }
+
+        table tr {
+            // border-bottom: 3px solid #ddd;
+            display: block;
+            margin-bottom: .625em;
+        }
+
+        table td {
+            // border-bottom: 1px solid #ddd;
+            display: block;
+            // font-size: .8em;
+            text-align: right;
+        }
+
+        table td::before {
+            /*
+          * aria-label has no advantage, it won't be read inside a table
+          content: attr(aria-label);
+          */
+            content: attr(data-label);
+            float: left;
+            font-weight: $fw-semi-bold;
+            // color: $clr-primary-400;
+            // text-transform: uppercase;
+        }
+
+        // table td:last-child {
+        //     border-bottom: 0;
+        // }
+    }
+
+}
+
+// .privacy-table{
+//    table{
+//     th{
+//         padding: 0.25rem 0.5rem;
+//         @media(min-width:$sm){
+//             padding: 0.5rem 1rem;
+//         }
+//     }
+//    } 
+// }

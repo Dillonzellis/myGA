@@ -1,0 +1,36 @@
+{
+  "name": "gbd_theme",
+  "version": "1.0.0",
+  "description": "GDB child theme for Divi Wordpress builds",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "production": "webpack --mode=production",
+    "test:chrome": "npx playwright test --headed --browser=chromium",
+    "test:firefox": "npx playwright test --headed --browser=firefox",
+    "test:safari": "npx playwright test --headed --browser=webkit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dillonzellis/GBD_Theme.git"
+  },
+  "author": "Dillon Ellis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dillonzellis/GBD_Theme/issues"
+  },
+  "homepage": "https://github.com/Dillonzellis/GBD_Theme#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1",
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

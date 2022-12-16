@@ -1,0 +1,36 @@
+@use "/src/sass/abstracts/" as *;
+@use "/src/sass/base/" as *;
+
+// .full-bleed-neutral-700 {
+//   box-shadow: 0 0 0 100max $clr-primary-400;
+//   clip-path: inset(0 -100vmax);
+
+//   @include breakpoint(lg) {
+//     box-shadow: 0 0 0 100vmax $clr-neutral-700;
+//     clip-path: inset(0 -100vmax);
+//   }
+
+//   @include breakpoint(xl) {
+//     box-shadow: 0 0 0 45vmax $clr-neutral-700;
+//     clip-path: inset(0 -100vmax);
+//   }
+// }
+
+// .full-bleed-primary-400 {
+//   box-shadow: 0 0 0 100vmax $clr-neutral-700;
+//   clip-path: inset(0 -100vmax);
+
+//   @include breakpoint(lg) {
+//     box-shadow: 0 0 0 100vmax $clr-primary-400;
+//     clip-path: inset(0 -100vmax);
+//   }
+
+//   @include breakpoint(xl) {
+//     box-shadow: 0 0 0 48vmax $clr-primary-400;
+//     clip-path: inset(0 -100vmax);
+//   }
+// }
+
+.space {
+  min-height: 250px;
+}
