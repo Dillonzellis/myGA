@@ -3,43 +3,43 @@
 
 // Padding & Margin
 
-.p-0 {
-  padding: 0 !important;
-}
+// .p-0 {
+//   padding: 0 !important;
+// }
 
-.p-400 {
-  padding: 1rem;
-}
+// .p-400 {
+//   padding: 1rem;
+// }
 
-.py-0 {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
+// .py-0 {
+//   padding-top: 0 !important;
+//   padding-bottom: 0 !important;
+// }
 
-.py-400 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
+// .py-400 {
+//   padding-top: 1rem;
+//   padding-bottom: 1rem;
+// }
 
-.py-450 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
+// .py-450 {
+//   padding-top: 1.5rem;
+//   padding-bottom: 1.5rem;
+// }
 
-.py-500 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
+// .py-500 {
+//   padding-top: 2rem;
+//   padding-bottom: 2rem;
+// }
 
-.py-650 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
+// .py-650 {
+//   padding-top: 2.5rem;
+//   padding-bottom: 2.5rem;
+// }
 
 
-.pb-0 {
-  padding-bottom: 0.5rem !important;
-}
+// .pb-0 {
+//   padding-bottom: 0.5rem !important;
+// }
 
 // .pb-200 {
 //   padding-bottom: 0.5rem !important;
@@ -63,37 +63,37 @@
 //   margin-bottom: 0 !important;
 // }
 
-.mb-200 {
-  margin-bottom: 0.5rem !important;
-}
+// .mb-200 {
+//   margin-bottom: 0.5rem !important;
+// }
 
-.mb-400 {
-  margin-bottom: 1rem !important;
-}
+// .mb-400 {
+//   margin-bottom: 1rem !important;
+// }
 
-.mb-500 {
-  margin-bottom: 1.5rem !important;
-}
+// .mb-500 {
+//   margin-bottom: 1.5rem !important;
+// }
 
 
-.mb-600 {
-  margin-bottom: 2rem;
-}
+// .mb-600 {
+//   margin-bottom: 2rem;
+// }
 
-.mb-650-min-md {
-  @include breakpoint(md) {
-    margin-bottom: 3rem !important;
-  }
+// .mb-650-min-md {
+//   @include breakpoint(md) {
+//     margin-bottom: 3rem !important;
+//   }
 
-}
+// }
 
-.mb-700 {
-  margin-bottom: 4.5rem;
-}
+// .mb-700 {
+//   margin-bottom: 4.5rem;
+// }
 
-.mr-200 {
-  margin-right: 0.5rem;
-}
+// .mr-200 {
+//   margin-right: 0.5rem;
+// }
 
 
 // .mb-700 {
@@ -139,19 +139,19 @@
 //   margin-bottom: 1rem;
 // }
 
-.m-inline-auto {
-  margin-inline: auto !important;
-}
+// .m-inline-auto {
+//   margin-inline: auto !important;
+// }
 
 // .m-start-auto {
 //   margin-inline-start: auto !important;
 // }
 
-.m-inline-auto-max-lg {
-  @include breakpoint-down(lg) {
-    margin-inline: auto !important;
-  }
-}
+// .m-inline-auto-max-lg {
+//   @include breakpoint-down(lg) {
+//     margin-inline: auto !important;
+//   }
+// }
 
 // Width
 

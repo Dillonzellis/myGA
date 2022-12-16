@@ -9,19 +9,12 @@
     cursor: pointer;
     text-transform: capitalize;
     border: 0;
-    border-radius: 100vmax;
-    padding: 0.8em 1.25em;
+    border-radius: 3px;
+    padding: 0.5em 1em;
     line-height: 1;
-
-    color: $clr-neutral-100;
-    background-color: $clr-accent-400;
 
     transform: scale(1);
     transition: transform 200ms ease;
-
-    a {
-        color: $clr-neutral-100;
-    }
 
     &:hover,
     &:focus {

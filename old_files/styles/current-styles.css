@@ -1,31 +1,4 @@
-/* Variables */
-
-:root {
-  --clr-text-100: #fff;
-  --clr-text-200: #666;
-  --clr-text-500: #003ca6;
-  --clr-text-700: #000;
-
-  --clr-primary-400: #003ca6;
-  --clr--accent-400: hsl(49, 99%, 49%);
-
-  --fs-400: 1rem;
-  --fs-425: 1.25rem;
-  --fs-450: 1.5rem;
-  --fs-500: 2rem;
-  --fs-600: 3rem;
-  --fs-700: 4rem;
-
-  --fw-600: 600;
-  --fw-700: 700;
-}
-
 /* Utility */
-
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
-}
 
 .center {
   justify-content: center;
@@ -33,38 +6,6 @@
 
 .t-center {
   text-align: center;
-}
-
-.bgc-primary-400 {
-  background-color: var(--clr-primary-400);
-}
-
-.bgc-accent-400 {
-  background-color: var(--clr--accent-400);
-}
-
-.clr-neutral-100 {
-  color: var(--clr-text-100);
-}
-
-.fs-425 {
-  font-size: var(--fs-425);
-}
-
-.btn {
-  display: inline-flex;
-
-  cursor: pointer;
-
-  padding: 0.5em 1em;
-
-  transform: scale(1);
-  transition: transform 200ms ease;
-}
-
-.btn:hover,
-.btn:focus {
-  transform: scale(1.05) translateY(-0.125em);
 }
 
 .inner-page-header {

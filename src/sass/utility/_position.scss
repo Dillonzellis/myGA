@@ -9,15 +9,15 @@
 //   position: relative;
 // }
 
-.text-center {
-    text-align: center;
-}
+// .text-center {
+//     text-align: center;
+// }
 
-.text-center-max-md {
-    @include breakpoint-down(md){
-        text-align: center;
-    }
-}
+// .text-center-max-md {
+//     @include breakpoint-down(md){
+//         text-align: center;
+//     }
+// }
 
 // .text-start {
 //   text-align: start;

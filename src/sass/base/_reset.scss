@@ -35,7 +35,7 @@ body {
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
-  // line-height: 1.5;
+  line-height: 1.125;
 }
 
 /* A elements that don't have a class get default styles */
@@ -66,9 +66,3 @@ svg {
     scroll-behavior: auto !important;
   }
 }
-
-// DZ Changes
-
-// small {
-//   font-size: $fs-300;
-// }
