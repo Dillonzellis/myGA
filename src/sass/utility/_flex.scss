@@ -106,9 +106,9 @@
 //   }
 // }
 
-// .j-center {
-//   justify-content: center;
-// }
+.j-center {
+  justify-content: center;
+}
 
 // .j-items-center {
 //   justify-items: center;
@@ -140,9 +140,9 @@
 //   }
 // }
 
-// .flex-wrap {
-//   flex-wrap: wrap;
-// }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 
 // .grid {
 //   display: grid;
@@ -158,6 +158,10 @@
 //   }
 // }
 
+.gap-100 {
+  gap: 0.25rem;
+}
+
 // .gap-100-max-lg {
 //   @include breakpoint-down(lg) {
 //     gap: 0.25rem;
@@ -168,6 +172,7 @@
 //   gap: 0.5rem;
 // }
 
+
 // .gap-400 {
 //   gap: 1rem;
 // }
@@ -177,6 +182,12 @@
 //     gap: 2rem;
 //   }
 // }
+
+.gap-500-min-xl {
+  @include breakpoint(xl) {
+    gap: 2rem;
+  }
+}
 
 // .gap-500 {
 //   gap: 2rem;
